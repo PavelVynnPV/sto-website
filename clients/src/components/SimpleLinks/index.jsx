@@ -1,0 +1,8 @@
+export {default as EngineFix} from "./EngineFix"
+export {default as HodovayaFix} from "./HodovayaFix"
+export {default as ToAutoFix} from "./ToAutoFix"
+export {default as ElectricFix} from "./ElectricFix"
+export {default as ConditionerFix} from "./ConditionerFix"
+export {default as ConditionerUsaFix} from "./ConditionerUsaFix"
+export {default as RozvalFix} from "./RozvalFix"
+export {default as Contacts} from "./Contacts"
