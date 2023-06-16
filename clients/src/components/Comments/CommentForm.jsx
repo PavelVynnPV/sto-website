@@ -31,12 +31,12 @@ const CommentForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch("https://sto-web-pv.onrender.com/comments", {
+    fetch("http://localhost:5001/comments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ author, content, day, starRate }),
+      body: JSON.stringify({ author, content, day, starRate, email, orderNumber }),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -46,7 +46,9 @@ const CommentForm = () => {
       })
       .catch((error) => console.error(error));
   };
-
+  console.log(author)
+  console.log(email)
+  console.log(orderNumber)
   return (
     <div className={styles.comment_form}>
       <CommentsList />
@@ -92,6 +94,7 @@ const CommentForm = () => {
             type="text"
             value={author}
             onChange={(event) => setAuthor(event.target.value)}
+            required
           />
         </div>
         <div className={styles.form__inputs}>
@@ -100,6 +103,7 @@ const CommentForm = () => {
             type="text"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
+            required
           />
         </div>
         <div className={styles.form__inputs}>
@@ -108,6 +112,7 @@ const CommentForm = () => {
             type="text"
             value={orderNumber}
             onChange={(event) => setOrderNumber(event.target.value)}
+            required
           />
         </div>
         <div className={styles.form__inputs}>
@@ -115,6 +120,7 @@ const CommentForm = () => {
           <textarea
             value={content}
             onChange={(event) => setContent(event.target.value)}
+            required
           ></textarea>
         </div>
         <button className={styles.form__button} type="submit">Відправити</button>

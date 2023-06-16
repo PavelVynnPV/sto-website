@@ -9,6 +9,10 @@ const replySchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  email: {
+    type: String,
+    required: true
+  },
   day: {
     type: String,
     required: true,
@@ -33,6 +37,14 @@ const commentSchema = new mongoose.Schema({
   starRate: {
     type: String,
     required: true,
+  },
+  email: {
+    type: String,
+    required: true
+  },
+  orderNumber: {
+    type: String,
+    required: true
   },
   replies: [replySchema], // Поле 'replies' для хранения ответов
   // Дополнительные поля комментария

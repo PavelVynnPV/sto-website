@@ -67,7 +67,7 @@ const LinksBar = ({ href }) => {
             openBurgerMenu ? styles.nav_burger_content : styles.nav__content
           }
         >
-          <Link to="/sto-website">Головна</Link>
+          <Link to="/sto-website" onClick={() => setOpenMenu(false)}>Головна</Link>
           <div className={styles.burger__block}>
             <Link className={styles.nav__menu} onClick={handleOpenMenu}>
               <div className={styles.links__menu_text}>
@@ -79,19 +79,19 @@ const LinksBar = ({ href }) => {
             {openMenu ? (
                 <>
                   <ul className={styles.active__menu}>
-                    <Link to="/autodiagnostic">
+                    <Link onClick={() => setOpenMenu(false)} to="/autodiagnostic">
                       <li>Автодіагностика</li>
                     </Link>
-                    <Link to="/tehservice">
+                    <Link onClick={() => setOpenMenu(false)} to="/tehservice">
                       <li>Технічне обслуговування</li>
                     </Link>
-                    <Link to="/electric">
+                    <Link onClick={() => setOpenMenu(false)} to="/electric">
                       <li>Автоелектрика</li>
                     </Link>
-                    <Link to="/hodovaya">
+                    <Link onClick={() => setOpenMenu(false)} to="/hodovaya">
                       <li>Ремонт ходової</li>
                     </Link>
-                    <Link to="/otherservices">
+                    <Link onClick={() => setOpenMenu(false)} to="/otherservices">
                       <li>Інші послуги автосервісу</li>
                     </Link>
                   </ul>
@@ -99,8 +99,8 @@ const LinksBar = ({ href }) => {
               ) : null}
           </div>
 
-          <Link to="/comments">Відгуки</Link>
-          <Link to="/contacts">Контакти</Link>
+          <Link to="/comments" onClick={() => setOpenMenu(false)}>Відгуки</Link>
+          <Link to="/contacts" onClick={() => setOpenMenu(false)}>Контакти</Link>
           <div
             className={openBurgerMenu ? styles.close_modal : styles.unActive}
             onClick={handleOpenBurgerMenu}

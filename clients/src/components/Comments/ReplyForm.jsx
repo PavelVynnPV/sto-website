@@ -5,6 +5,7 @@ const ReplyForm = ({ commentId, setComments }) => {
   const [author, setAuthor] = useState("");
   const [content, setContent] = useState("");
   const [day, setDay] = useState("");
+  const [email, setEmail] = useState("");
 
   useEffect(() => {
     const date = new Date();
@@ -19,12 +20,12 @@ const ReplyForm = ({ commentId, setComments }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch(`https://sto-web-pv.onrender.com/comments/${commentId}/replies`, {
+    fetch(`http://localhost:5001/comments/${commentId}/replies`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ author, content, day }),
+      body: JSON.stringify({ author, content, day, email }),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -46,6 +47,17 @@ const ReplyForm = ({ commentId, setComments }) => {
           id="author"
           value={author}
           onChange={(event) => setAuthor(event.target.value)}
+          required
+        />
+      </div>
+      <div className={styles.form__inputs}>
+        <label htmlFor="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          required
         />
       </div>
       <div className={styles.form__inputs}>
@@ -54,9 +66,10 @@ const ReplyForm = ({ commentId, setComments }) => {
           id="content"
           value={content}
           onChange={(event) => setContent(event.target.value)}
+          required
         ></textarea>
       </div>
-      <button type="submit">Отправить ответ</button>{" "}
+      <button className={styles.form__button} type="submit">Отправить ответ</button>{" "}
     </form>
   );
 };

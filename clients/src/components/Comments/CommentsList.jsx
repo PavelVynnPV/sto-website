@@ -11,7 +11,7 @@ const CommentsList = () => {
   const [openReplies, setOpenReplies] = useState({});
 
   useEffect(() => {
-    fetch("https://sto-web-pv.onrender.com/comments")
+    fetch("http://localhost:5001/comments")
       .then((response) => response.json())
       .then((data) => setComments(data))
       .catch((error) => console.error(error));
@@ -87,7 +87,7 @@ const CommentsList = () => {
                 toggleReply(comment._id);
               }}
             >
-              <span>
+              <span className={styles.reply_button}>
                 <span className={styles.arrow__icon}>
                   <i class="fa-solid fa-reply fa-rotate-180"></i>
                 </span>

@@ -132,6 +132,9 @@
   gap: 5px;
   align-items: center;
 }
+.reply {
+  width: 100px;
+}
 .fa-reply {
   font-size: 18px;
 }

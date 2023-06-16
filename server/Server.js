@@ -17,13 +17,15 @@ app.use((req, res, next) => {
 // Обработка запросов комментариев
 app.post("/comments", async (req, res) => {
   try {
-    const { author, content, day, starRate } = req.body; // Получение данных комментария из запроса
+    const { author, content, day, starRate, email, orderNumber } = req.body; // Получение данных комментария из запроса
 
     const newComment = new Comment({
       author,
       content,
       day,
       starRate,
+      email,
+      orderNumber
     });
 
     const savedComment = await newComment.save(); // Сохранение комментария в базе данных
@@ -51,7 +53,7 @@ app.get("/comments", async (req, res) => {
 app.post("/comments/:commentId/replies", async (req, res) => {
   try {
     const commentId = req.params.commentId;
-    const { author, content, day } = req.body;
+    const { author, content, day, email } = req.body;
 
     const comment = await Comment.findById(commentId);
 
@@ -59,7 +61,7 @@ app.post("/comments/:commentId/replies", async (req, res) => {
       return res.status(404).json({ message: "Комментарий не найден" });
     }
 
-    comment.replies.push({ author, content, day });
+    comment.replies.push({ author, content, day, email });
     const savedComment = await comment.save();
 
     // Возвращаем объект ответа с полем "replies"
