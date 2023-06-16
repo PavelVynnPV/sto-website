@@ -68,29 +68,29 @@ const Main = () => {
           <br /> автомобілів
         </h1>
         <p>
-          Мы предоставляем качественные услуги по диагностике и техническому
-          обслуживанию авто в Киеве. Специалисты с многолетним опытом выполняют
-          самые сложные задачи.
+          Ми надаємо якісні послуги з діагностики та технічного обслуговування
+          авто в Києві. Фахівці з багаторічним досвідом виконують найскладніші
+          завдання.
         </p>
         <div className={styles.fix__blocks_container}>
           <div>
-          <Link to="/autodiagnostic" className={styles.fix__block}>
-            <p className={styles.fix__block_text}>Автодіагностика</p>
-          </Link>
-          <Link to="/tehservice" className={styles.fix__block}>
-            <p className={styles.fix__block_text}>Технічне обслуговування</p>
-          </Link>
-          <Link to="/electric" className={styles.fix__block}>
-            <p className={styles.fix__block_text}>Автоелектрика</p>
-          </Link>
+            <Link to="/autodiagnostic" className={styles.fix__block}>
+              <p className={styles.fix__block_text}>Автодіагностика</p>
+            </Link>
+            <Link to="/tehservice" className={styles.fix__block}>
+              <p className={styles.fix__block_text}>Технічне обслуговування</p>
+            </Link>
+            <Link to="/electric" className={styles.fix__block}>
+              <p className={styles.fix__block_text}>Автоелектрика</p>
+            </Link>
           </div>
           <div>
-          <Link to="/hodovaya" className={styles.fix__block}>
-            <p className={styles.fix__block_text}>Ремонт ходової</p>
-          </Link>
-          <Link to="/otherservices" className={styles.fix__block}>
-            <p className={styles.fix__block_text}>Інші послуги автосервісу</p>
-          </Link>
+            <Link to="/hodovaya" className={styles.fix__block}>
+              <p className={styles.fix__block_text}>Ремонт ходової</p>
+            </Link>
+            <Link to="/otherservices" className={styles.fix__block}>
+              <p className={styles.fix__block_text}>Інші послуги автосервісу</p>
+            </Link>
           </div>
         </div>
       </section>

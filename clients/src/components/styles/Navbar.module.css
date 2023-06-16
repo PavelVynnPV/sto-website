@@ -375,6 +375,9 @@ nav {
   .nav_burger_content {
     padding-top: 30px;
   }
+  .link_view {
+    padding: 0 0 0px 20px;
+  }
 }
 
 

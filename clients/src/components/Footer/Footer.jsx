@@ -6,6 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <div className={styles.footer__container}>
+        <div className={styles.first_links_block}>
         <div className={styles.links_block}>
           <h1 className={styles.links__title}>МЕНЮ</h1>
           <ul className={styles.menu__block}>
@@ -42,11 +43,14 @@ const Footer = () => {
             
           </ul>
         </div>
+        </div>
+        <div className={styles.first_links_block}>
+
         <div className={styles.links_block}>
           <div>
             <h1 className={styles.links__title}>АДРЕС</h1>
             <ul className={styles.menu__block}>
-              <li>г.Киев ул.Радищева, 7</li>
+              <li>м.Київ пр.Відрадний, 95</li>
             </ul>
           </div>
           <div>
@@ -54,7 +58,7 @@ const Footer = () => {
             <ul className={styles.menu__block}>
               <p>
                 пн.-сб. 09:00-18:00
-                <br /> вс. выходной
+                <br /> нд. вихідний
               </p>
             </ul>
           </div>
@@ -71,6 +75,7 @@ const Footer = () => {
               <a href="mailto:andrcars.ua@gmail.com">andrcars.ua@gmail.com</a>
             </p>
           </ul>
+          </div>
         </div>
       </div>
     </footer>
