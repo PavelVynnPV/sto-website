@@ -31,7 +31,7 @@ const CommentForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch("http://localhost:5000/comments", {
+    fetch("http://localhost:5001/comments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

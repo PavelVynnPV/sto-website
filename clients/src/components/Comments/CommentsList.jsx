@@ -11,7 +11,7 @@ const CommentsList = () => {
   const [openReplies, setOpenReplies] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:5000/comments")
+    fetch("http://localhost:5001/comments")
       .then((response) => response.json())
       .then((data) => setComments(data))
       .catch((error) => console.error(error));

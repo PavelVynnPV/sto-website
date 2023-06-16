@@ -19,7 +19,7 @@ const ReplyForm = ({ commentId, setComments }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch(`http://localhost:5000/comments/${commentId}/replies`, {
+    fetch(`http://localhost:5001/comments/${commentId}/replies`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

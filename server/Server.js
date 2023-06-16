@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 5000;
+const port = 5001;
 require('./db'); // Подключение к базе данных
 
 const Comment = require('./models/Comments'); // Подключение модели комментария

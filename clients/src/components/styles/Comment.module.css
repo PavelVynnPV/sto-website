@@ -11,10 +11,6 @@
   justify-content: center;
   margin-bottom: 30px;
 }
-.rating:nth-child(1) {
-}
-.rating:nth-child(3) {
-}
 .rating input {
   position: relative;
   width: 40px;

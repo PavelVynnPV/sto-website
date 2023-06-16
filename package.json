@@ -6,13 +6,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "array-uniq": "^1.0.3",
     "array-union": "^1.0.2",
+    "array-uniq": "^1.0.3",
     "async": "^3.2.4",
     "balanced-match": "^1.0.2",
     "brace-expansion": "^1.1.11",
-    "commondir": "^1.0.1",
     "commander": "^2.20.3",
+    "commondir": "^1.0.1",
     "concat-map": "^0.0.1",
     "email-addresses": "^5.0.0",
     "escape-string-regexp": "^1.0.5",
@@ -31,6 +31,7 @@
     "locate-path": "^5.0.0",
     "make-dir": "^3.1.0",
     "minimatch": "^3.1.2",
+    "node": "^20.2.0",
     "object-assign": "^4.1.1",
     "once": "^1.4.0",
     "p-limit": "^2.3.0",
@@ -44,13 +45,13 @@
     "pkg-dir": "^4.2.0",
     "semver": "^6.3.0",
     "strip-outer": "^1.0.1",
-    "universalify": "^0.1.2",
     "trim-repeated": "^1.0.0",
+    "universalify": "^0.1.2",
     "wrappy": "^1.0.2"
   },
   "scripts": {
-    "predeploy": "cd client && npm run build",
-    "deploy": "cd client && gh-pages -d build",
+    "predeploy": "cd clients && npm run build",
+    "deploy": "cd clients && gh-pages -d build",
     "postdeploy": "cd server && npm install && npm start"
   },
   "repository": {
