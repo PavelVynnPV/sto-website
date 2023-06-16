@@ -19,7 +19,7 @@ const ReplyForm = ({ commentId, setComments }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch(`http://localhost:5001/comments/${commentId}/replies`, {
+    fetch(`https://sto-web-pv.onrender.com/comments/${commentId}/replies`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

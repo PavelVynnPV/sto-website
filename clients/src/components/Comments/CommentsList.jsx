@@ -11,7 +11,7 @@ const CommentsList = () => {
   const [openReplies, setOpenReplies] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:5001/comments")
+    fetch("https://sto-web-pv.onrender.com/comments")
       .then((response) => response.json())
       .then((data) => setComments(data))
       .catch((error) => console.error(error));
