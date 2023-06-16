@@ -2,7 +2,8 @@
   width: 100%;
   padding: 3rem 10px;
 }
-.fix_kinds, .diagnostic {
+.fix_kinds,
+.diagnostic {
   padding: 0 10px;
 }
 .advances__container {
@@ -154,7 +155,7 @@
   font-size: 1.5rem;
 }
 .fix__block:nth-child(1) {
-  background-image: url("../img/engine_fix.jpeg");
+  /* background-image: url("../img/service_fix.jpeg"); */
 }
 .fix__block:nth-child(2) {
   background-image: url("../img/xodova_fix.jpeg");
@@ -225,24 +226,12 @@
   left: 0;
 }
 .about ul,
-.engine__block ul,
-.hodovaya__block ul,
-.conditioner__block ul,
-.rozval__block ul,
-.conditioner_usa__block ul,
-.toAuto__block ul,
-.electric__block ul {
+.service__block ul {
   list-style: initial;
   padding-left: 50px;
 }
 .about ul li,
-.engine__block ul li,
-.hodovaya__block ul li,
-.rozval__block ul li,
-.toAuto__block ul li,
-.conditioner__block ul li,
-.conditioner_usa__block ul li,
-.electric__block ul li {
+.service__block ul li {
   color: #000;
 }
 .about__content {
@@ -271,41 +260,36 @@
   width: 200px;
 }
 
-/* ////ENGINE */
-
-.engine__block,
-.toAuto__block,
-.hodovaya__block,
-.conditioner_usa__block,
-.electric__block,
-.rozval__block,
-.conditioner__block {
+/* ////service */
+.unActive {
+  display: none !important;
+}
+.active {
+  display: flex;
+}
+#autoDiagnostic_block .service_table li:nth-child(2){
+  background-color: #241d1d41 !important;
+  font-weight: bold;
+}
+.service__block {
   width: 100%;
   padding-bottom: 3rem;
 }
-.engine__block ul,
-.hodovaya__block ul,
-.toAuto__block ul,
-.conditioner__block ul,
-.conditioner_usa__block ul,
-.rozval__block ul,
-.electric__block ul{
+.service__block ul {
   margin: 15px 0;
   gap: 5px;
   display: flex;
   flex-direction: column;
 }
-.engine__content {
+.service__content {
   display: flex;
   flex-direction: column;
 }
-.engine__banner,
-.hodovay__banner,
-.toAuto__banner,
+.autodiagnostic__banner,
+.hodovaya__banner,
 .electric__banner,
-.conditioner_usa__banner,
-.rozval__banner,
-.conditioner__banner {
+.other_services__banner,
+.tehservice__banner {
   height: 375px;
   position: relative;
   background-repeat: no-repeat;
@@ -316,10 +300,8 @@
   justify-content: center;
   align-items: center;
 }
-.engine__banner {
-  background-image: url("../img/engine_img.jpeg");
-}
-.engine__banner_title {
+
+.service__banner_title {
   color: #fff;
   border: 3px solid #fff;
   z-index: 2;
@@ -329,13 +311,11 @@
   margin: 0 20px;
   text-align: center;
 }
-.engine__banner::after,
-.hodovay__banner::after,
-.toAuto__banner::after,
+.autodiagnostic__banner::after,
+.hodovaya__banner::after,
+.other_services__banner::after,
 .electric__banner::after,
-.conditioner_usa__banner::after,
-.rozval__banner::after,
-.conditioner__banner::after {
+.tehservice__banner::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -346,26 +326,29 @@
   bottom: 0;
   right: 0;
 }
-.engine__info {
+.service__info {
   max-width: 1100px;
   margin: auto;
   font-size: 1rem;
   margin-top: 3rem;
   padding: 0 20px;
 }
-.engine_table {
+.service_table {
   list-style: none !important;
   padding: 0 !important;
   width: 100%;
-  border: 1px solid #000;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
   gap: 0 !important;
+  margin-bottom: 70px !important;
 }
-.engine_table__first {
+.service_table__first {
   background-color: #241d1d !important;
   color: #fff !important;
   height: 40px;
 }
-.engine_table li {
+.service_table li {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #000;
@@ -373,55 +356,78 @@
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  transition: .4s all ease;
+  transition: 0.4s all ease;
 }
-.engine_table li:hover {
+.under_service__text {
+  color: red !important;
+  font-size: 14px;
+  height: 25px !important;
+}
+.under_service__text:hover {
+  background-color: #fff !important;
+}
+.under_service__text p {
+  position: relative;
+}
+.under_service__text p::after {
+  content: "\f062";
+  position: absolute;
+  font-family: fontAwesome;
+  font-size: 14px;
+  right: -20px;
+}
+.under_service__text p::before {
+  content: "\f062";
+  position: absolute;
+  font-family: fontAwesome;
+  font-size: 14px;
+  left: -20px;
+}
+.service_table li:hover {
   background-color: #54b0df;
 }
-.engine_table li:nth-last-child(1) {
-  border-bottom: none;
-}
-.engine_table li span:nth-child(1) {
+.service_table li span:nth-child(1) {
   width: 745px;
   padding-left: 20px;
 }
-.engine_table li span:nth-child(2) {
+.service_table li span:nth-child(2) {
   width: 330px;
   text-align: center;
   position: relative;
+  font-size: 15px;
 }
-.engine_table li span:nth-child(2)::after {
+.service_table li span:nth-child(1) {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.service_table li span:nth-child(1)::after {
   content: "";
   position: absolute;
   width: 1px;
   background-color: #000;
-  left: 0;
-  top: -10px;
-  height: 41px;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
 }
 
-/* ///HODOVAYA */
-.hodovay__banner {
-  background-image: url("../img/hodovaya_img.jpeg");
+.autodiagnostic__banner {
+  background-image: url("../img/autodiagnostic.jpeg");
 }
-/* ///TOAUTOFIX */
-.toAuto__banner {
-  background-image: url("../img/toautofix_img.jpeg");
+.tehservice__banner {
+  background-image: url("../img/tehService.jpeg");
+}
+.hodovaya__banner {
+  background-image: url("../img/hodova.jpg");
+}
+.other_services__banner {
+  background-image: url("../img/other_services.jpg");
 }
 .electric__banner {
-  background-image: url("../img/electric_img.jpeg");
+  background-image: url("../img/electric.jpg");
 }
-.conditioner__banner {
-  background-image: url("../img/conditioner_img.jpeg");
-}
-.conditioner_usa__banner {
-  background-image: url("../img/conditioner_usa_img.jpeg");
-}
-.rozval__banner {
-  background-image: url("../img/rozval_img.jpeg");
-}
-
-
 /* //////CONTACTS */
 
 .contacts {
@@ -437,11 +443,11 @@
 .contacts__info {
   width: 540px;
 }
-.contacts__info .engine__title {
+.contacts__info .service__title {
   font-size: 2.5rem;
   position: relative;
 }
-.contacts__info .engine__title::after {
+.contacts__info .service__title::after {
   content: "";
   position: absolute;
   width: 200px;
@@ -457,27 +463,27 @@
   gap: 10px;
   font-weight: bold;
 }
-.contacts__adress span, .contacts__adress a {
+.contacts__adress span,
+.contacts__adress a {
   font-size: 1rem;
   font-weight: normal;
 }
 
-
 @media (max-width: 1200px) {
-  .engine__info {
+  .service__info {
     width: 100% !important;
   }
-  .engine_table li{
+  .service_table li {
     height: 100%;
   }
-  .engine_table li span:nth-child(2)::after {
+  .service_table li span:nth-child(2)::after {
     width: 0px !important;
   }
-  .engine_table li span:nth-child(1) {
+  .service_table li span:nth-child(1) {
     position: relative;
     padding: 10px 0 10px 20px;
   }
-  .engine_table li span:nth-child(1):after {
+  .service_table li span:nth-child(1):after {
     content: "";
     position: absolute;
     right: 0px;
@@ -515,9 +521,6 @@
   }
 }
 
-
-
-
 @media (max-width: 890px) {
   .fix_kinds .advances__title::after {
     left: 38%;
@@ -536,7 +539,6 @@
     left: 35%;
     transition: 1s all ease;
   }
-  
 }
 
 @media (max-width: 558px) {

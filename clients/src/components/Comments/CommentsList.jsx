@@ -71,7 +71,17 @@ const CommentsList = () => {
               <span className={styles.feedback__date}>{comment.day}</span>
             </div>
             <p>{comment.content}</p>
-            <div
+            <div className={comment?.replies.length === 0 ? styles.unActive : styles.reply__answers}>
+           <h3>Відповіді:</h3>
+
+            {comment.replies?.map((message) => (
+              <div className={styles.answer}>
+                <p><strong>Ім'я:</strong> {message.author}</p>
+                <p><strong>Відповідь на коментар:</strong> {message.content}</p>
+              </div>
+            ))}
+            </div>
+             <div
               className={styles.reply}
               onClick={() => {
                 toggleReply(comment._id);
@@ -84,12 +94,6 @@ const CommentsList = () => {
                 Відповісти
               </span>
             </div>
-            {comment.replies?.map((message) => (
-              <>
-                <p>AVTOR: {message.author}</p>
-                <p>COMMENT: {message.content}</p>
-              </>
-            ))}
             {openReplies[comment._id] && (
               <div className={styles.reply__content}>
                 <ReplyForm commentId={comment._id} setComments={setComments} />

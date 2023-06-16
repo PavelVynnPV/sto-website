@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import styles from "../styles/Comment.module.css";
 
 const ReplyForm = ({ commentId, setComments }) => {
   const [author, setAuthor] = useState("");
@@ -37,9 +38,9 @@ const ReplyForm = ({ commentId, setComments }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="author">Автор:</label>
+    <form onSubmit={handleSubmit} className={styles.reply__form}>
+      <div className={styles.form__inputs}>
+        <label htmlFor="author">Ім'я:</label>
         <input
           type="text"
           id="author"
@@ -47,8 +48,8 @@ const ReplyForm = ({ commentId, setComments }) => {
           onChange={(event) => setAuthor(event.target.value)}
         />
       </div>
-      <div>
-        <label htmlFor="content">Содержание:</label>
+      <div className={styles.form__inputs}>
+        <label htmlFor="content">Коментар:</label>
         <textarea
           id="content"
           value={content}

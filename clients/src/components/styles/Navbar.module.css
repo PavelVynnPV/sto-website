@@ -154,7 +154,7 @@ nav {
   gap: 10px;
   text-align: left !important;
   padding: 20px 0;
-  width: 220px;
+  width: 250px;
 }
 .active__menu a {
   width: 100%;
@@ -183,6 +183,10 @@ nav {
 }
 .unActive {
   display: none;
+}
+
+.link_view {
+  color: blue;
 }
 
 @media (max-width: 1135px) {
