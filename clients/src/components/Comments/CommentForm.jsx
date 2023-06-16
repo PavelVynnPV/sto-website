@@ -31,7 +31,7 @@ const CommentForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch("http://localhost:5001/comments", {
+    fetch("https://sto-web-pv.onrender.com/comments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
