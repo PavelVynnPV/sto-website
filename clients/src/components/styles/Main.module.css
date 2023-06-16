@@ -468,6 +468,10 @@
   font-size: 1rem;
   font-weight: normal;
 }
+.links__menu_text {
+  display: flex;
+  flex-direction: row !important;
+}
 
 @media (max-width: 1200px) {
   .service__info {

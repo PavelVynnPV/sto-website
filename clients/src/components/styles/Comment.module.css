@@ -7,14 +7,13 @@
   position: relative;
   display: flex;
   flex-direction: row-reverse;
-  width: 400px;
+  width: 100%;
+  justify-content: center;
   margin-bottom: 30px;
 }
 .rating:nth-child(1) {
-  transform: translateX(-80px);
 }
 .rating:nth-child(3) {
-  transform: translateX(80px);
 }
 .rating input {
   position: relative;
@@ -164,8 +163,8 @@
   text-align: center;  
 }
 .comment_form form {
-  width: 587px;
-  margin: auto;
+  max-width: 587px;
+    margin: auto;
 }
 .form__inputs {
   display: flex;
@@ -228,4 +227,29 @@ textarea {
 }
 .unActive {
   display: none;
+}
+
+@media (max-width: 1100px) {
+  .comment_form {
+    padding: 0 20px;
+  }
+  textarea {
+    width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .feedback__name_rate_date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+@media (max-width: 290px) {
+  .feedback__name_rate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
 }

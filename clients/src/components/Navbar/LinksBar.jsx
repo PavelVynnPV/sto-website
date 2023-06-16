@@ -10,7 +10,7 @@ const LinksBar = ({ href }) => {
   const [windowHref, setWindowHref] = useState("Головна");
   const [windowLocHref, setWindowLocHref] = useState("");
   const location = useLocation();
-  let paths = location.pathname.split('/').filter((path) => path !== '');
+  let paths = location.pathname.split("/").filter((path) => path !== "");
 
   const handleOpenMenu = () => {
     if (openMenu === false) {
@@ -34,31 +34,31 @@ const LinksBar = ({ href }) => {
   }, [href]);
 
   useEffect(() => {
-    let window_location = '';
+    let window_location = "";
 
     const windowHrefChanger = () => {
-      if (paths[0] === 'comments') {
-        window_location = "Відгуки" 
-      } else if (paths[0] === 'contacts') {
-        window_location = "Контакти" 
-      } else if (paths[0] === 'autodiagnostic') {
-        window_location = "Автодіагностика" 
-      } else if (paths[0] === 'tehservice') {
-        window_location = "Технічне обслуговування" 
-      } else if (paths[0] === 'electric') {
-        window_location = "Автоелектрика" 
-      } else if (paths[0] === 'hodovaya') {
-        window_location = "Ремонт ходової" 
-      } else if (paths[0] === 'otherservices') {
-        window_location = "Інші послуги автосервісу" 
+      if (paths[0] === "comments") {
+        window_location = "Відгуки";
+      } else if (paths[0] === "contacts") {
+        window_location = "Контакти";
+      } else if (paths[0] === "autodiagnostic") {
+        window_location = "Автодіагностика";
+      } else if (paths[0] === "tehservice") {
+        window_location = "Технічне обслуговування";
+      } else if (paths[0] === "electric") {
+        window_location = "Автоелектрика";
+      } else if (paths[0] === "hodovaya") {
+        window_location = "Ремонт ходової";
+      } else if (paths[0] === "otherservices") {
+        window_location = "Інші послуги автосервісу";
       } else {
-        window_location = ""
+        window_location = "";
       }
-    }
-  
-    windowHrefChanger()
-    setWindowLocHref(window_location)
-  }, [paths])
+    };
+
+    windowHrefChanger();
+    setWindowLocHref(window_location);
+  }, [paths]);
   return (
     <>
       <nav>
@@ -68,31 +68,37 @@ const LinksBar = ({ href }) => {
           }
         >
           <Link to="/">Головна</Link>
-          <Link className={styles.nav__menu} onClick={handleOpenMenu}>
-            Послуги<span className={styles.arrow_down_icon}></span>
+          <div className={styles.burger__block}>
+            <Link className={styles.nav__menu} onClick={handleOpenMenu}>
+              <div className={styles.links__menu_text}>
+                <span>Послуги</span>{" "}
+                <span className={styles.arrow_down_icon}></span>
+              </div>
+             
+            </Link>
             {openMenu ? (
-              <>
-                <ul className={styles.active__menu}>
-                <Link to="/autodiagnostic">
-                    <li>Автодіагностика</li>
-                  </Link>
-                  <Link to="/tehservice">
-                    <li>Технічне обслуговування</li>
-                  </Link>
-                  <Link to="/electric">
-                    <li>Автоелектрика</li>
-                  </Link>
-                  <Link to="/hodovaya">
-                    <li>Ремонт ходової</li>
-                  </Link>
-                  <Link to="/otherservices">
-                    <li>Інші послуги автосервісу</li>
-                  </Link>
-                 
-                </ul>
-              </>
-            ) : null}
-          </Link>
+                <>
+                  <ul className={styles.active__menu}>
+                    <Link to="/autodiagnostic">
+                      <li>Автодіагностика</li>
+                    </Link>
+                    <Link to="/tehservice">
+                      <li>Технічне обслуговування</li>
+                    </Link>
+                    <Link to="/electric">
+                      <li>Автоелектрика</li>
+                    </Link>
+                    <Link to="/hodovaya">
+                      <li>Ремонт ходової</li>
+                    </Link>
+                    <Link to="/otherservices">
+                      <li>Інші послуги автосервісу</li>
+                    </Link>
+                  </ul>
+                </>
+              ) : null}
+          </div>
+
           <Link to="/comments">Відгуки</Link>
           <Link to="/contacts">Контакти</Link>
           <div
@@ -118,7 +124,9 @@ const LinksBar = ({ href }) => {
         ></div>
       </nav>
       <section className={styles.link_view}>
-        <p>{windowHref} {paths?.length !== 0 ? ">" : null} {windowLocHref}</p>
+        <p>
+          {windowHref} {paths?.length !== 0 ? ">" : null} {windowLocHref}
+        </p>
       </section>
     </>
   );
