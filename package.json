@@ -50,10 +50,10 @@
     "wrappy": "^1.0.2"
   },
   "scripts": {
-    "start": "concurrently \"npm run server\" \"cd clients && npm start\"",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm start",
     "client": "cd clients && npm start",
-    "deploy": "cd clients && npm run build && gh-pages -d build"
+    "deploy": "concurrently \"npm run server\" \"cd clients && npm run build && gh-pages -d build\""
   },
   "repository": {
     "type": "git",
