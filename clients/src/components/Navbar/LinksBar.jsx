@@ -67,7 +67,7 @@ const LinksBar = ({ href }) => {
             openBurgerMenu ? styles.nav_burger_content : styles.nav__content
           }
         >
-          <Link to="/">Головна</Link>
+          <Link to="/sto-website">Головна</Link>
           <div className={styles.burger__block}>
             <Link className={styles.nav__menu} onClick={handleOpenMenu}>
               <div className={styles.links__menu_text}>

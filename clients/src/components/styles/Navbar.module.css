@@ -137,9 +137,8 @@ nav {
   height: 100%;
   position: relative;
 }
-.burger__block a:hover {
+.burger__block .nav__menu:hover {
   background-color: #000;
-  height: 100%;
 }
 .burger__content {
   background-color: #000;
@@ -306,7 +305,7 @@ nav {
   .active__menu {
     background-color: #241d1d;
     left: 250px;
-    top: 105px;
+    top: -19px;
     height: 380px;
     border-left: 2px solid #fff;
     padding-left: 20px;
@@ -348,24 +347,26 @@ nav {
     transform: rotate(45deg);
   }
   .burger__block {
-    height: 0 !important;
-  }
-  .burger__block a:hover {
-    height: 0 !important;
+    height: 70px !important;
   }
 }
 
 @media (max-width: 590px) {
   .active__menu {
-    position: initial;
-    margin: 0;
-    border: 0;
-    padding: 0;
     border-bottom: 3px solid #fff;
+    border-left: 0;
+    padding: 0;
+    position: initial;
+  }
+  .burger__block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
   }
   .active__menu a {
     text-align: center;
-    position: initial;
+    padding: 10px 0;
   }
   .nav__menu {
     display: flex;

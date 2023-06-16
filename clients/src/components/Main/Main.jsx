@@ -73,27 +73,25 @@ const Main = () => {
           самые сложные задачи.
         </p>
         <div className={styles.fix__blocks_container}>
-          <Link to="/enginefix" className={styles.fix__block}>
-            <p className={styles.fix__block_text}>Ремонт двигунів</p>
+          <div>
+          <Link to="/autodiagnostic" className={styles.fix__block}>
+            <p className={styles.fix__block_text}>Автодіагностика</p>
           </Link>
+          <Link to="/tehservice" className={styles.fix__block}>
+            <p className={styles.fix__block_text}>Технічне обслуговування</p>
+          </Link>
+          <Link to="/electric" className={styles.fix__block}>
+            <p className={styles.fix__block_text}>Автоелектрика</p>
+          </Link>
+          </div>
+          <div>
           <Link to="/hodovaya" className={styles.fix__block}>
             <p className={styles.fix__block_text}>Ремонт ходової</p>
           </Link>
-          <Link to="/toautofix" className={styles.fix__block}>
-            <p className={styles.fix__block_text}>ТО автомобіля</p>
+          <Link to="/otherservices" className={styles.fix__block}>
+            <p className={styles.fix__block_text}>Інші послуги автосервісу</p>
           </Link>
-          <Link to="/electricfix" className={styles.fix__block}>
-            <p className={styles.fix__block_text}>Автоелектрик</p>
-          </Link>
-          <Link to="/conditionerfix" className={styles.fix__block}>
-            <p className={styles.fix__block_text}>Автокондиціонер</p>
-          </Link>
-          <Link to="/conditionerusafix" className={styles.fix__block}>
-            <p className={styles.fix__block_text}>Автокондиціонери США</p>
-          </Link>
-          <Link to="/rozvalfix" className={styles.fix__block}>
-            <p className={styles.fix__block_text}>Розвал-схождения 3D</p>
-          </Link>
+          </div>
         </div>
       </section>
       <section className={styles.diagnostic}>
@@ -105,17 +103,16 @@ const Main = () => {
             Для більшості людей автомобіль стає невід'ємною частиною і в якомусь
             сенсі найкращим другом. Який мовчазно допомагає у найважчих життєвих
             обставинах. Тому логічно, коли і ви допомагаєте своєму другові
-            завжди залишатися бадьорим і здоровим, то і він у свою чергу вам за це
-            безмежно віддячить.
+            завжди залишатися бадьорим і здоровим, то і він у свою чергу вам за
+            це безмежно віддячить.
             <br />
             <br /> Колектив СТО «ANDRCARS» із задоволенням та професіоналізмом
             допоможе вам тримати вашого «залізного коня» у чудовій формі. А вам
             залишається лише не забувати періодично заїжджати до нас.
             <br />
             <br /> СТО "ANDRCARS" займається ремонтом автомобілів впродовж
-            тривалого часу. Ми нагромадили величезний досвід у
-            роботі та навчили багато висококласних фахівців для свого
-            автосервісу.
+            тривалого часу. Ми нагромадили величезний досвід у роботі та навчили
+            багато висококласних фахівців для свого автосервісу.
             <br />
             <br /> Наше СТО є мультибрендовим. Ми професійно робимо ремонт
             комерційних та легкових автомобілів різних виробників. Спектр

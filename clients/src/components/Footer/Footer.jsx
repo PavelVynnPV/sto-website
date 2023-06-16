@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={styles.links_block}>
           <h1 className={styles.links__title}>МЕНЮ</h1>
           <ul className={styles.menu__block}>
-            <Link to="/">
+            <Link to="/sto-website">
               <li>Головна</li>
             </Link>
             <Link to="/comments">
