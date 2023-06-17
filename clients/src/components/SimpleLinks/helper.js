@@ -35,13 +35,13 @@ export const steering = [
     serv_title: "",
     name: "Заміна рульової рейки",
     price: "від 2800грн.",
-    warning: "Якщо ауді с6 кузов то там 5000",
+    warning: "Якщо ауді с6 кузов - 5000",
   },
   {
     serv_title: "",
     name: "Ремонт рульової рейки",
     price: "від 4000грн.",
-    warning: "Мастерсервіс!!! договоритись, ірпінська 62б",
+    warning: "Мастерсервіс!!! домовитись, ірпінська 62б",
   },
   {
     serv_title: "",
@@ -53,7 +53,7 @@ export const steering = [
     serv_title: "",
     name: "Заміна насоса електрогідропідсилювача керма",
     price: "від 950грн.",
-    warning: "Треба дивитись чи є стружка",
+    warning: "Треба перевірити, чи є стружка",
   },
   {
     serv_title: "",
@@ -452,8 +452,8 @@ export const exhaust_system = [
   {
     serv_title: "",
     name: "Заміна лямбда-зонда        ",
-    price: "",
-    warning: "від 450грн.        ",
+    price: "від 450грн.",
+    warning: "        ",
   },
 ];
 
@@ -754,7 +754,7 @@ export const hodova = [
     serv_title: "",
     name: "Заміна кульових опор (ціна за 1 од.)    ",
     price: "від 300грн.    ",
-    warning: "Якщо з закльопками( висверлювати) то буде 800    ",
+    warning: "Якщо з закльопками(висверлювати) - 800    ",
   },
   {
     serv_title: "",
@@ -1065,7 +1065,7 @@ export const replacement_filters = [
     serv_title: "",
     name: "Заміна фільтра в АКПП        ",
     price: "від 1100грн.        ",
-    warning: "Є фільтра які стоять в коробці її треба розбирати*        ",
+    warning: "Фільтри, які стоять в коробці, треба розбирати*        ",
   },
 ];
 export const replacement_belts = [
@@ -1135,7 +1135,7 @@ export const replacement_belts = [
     serv_title: "",
     name: "Замена комплекта цепи ГРМ и цепи маслонасоса        ",
     price: "від 5500грн.        ",
-    warning: "Якщо в8 двигун, то це приблизно 8000        ",
+    warning: "Якщо в8 двигун - від 8000        ",
   },
 
   {

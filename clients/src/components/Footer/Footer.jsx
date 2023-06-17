@@ -48,7 +48,7 @@ const Footer = () => {
 
         <div className={styles.links_block}>
           <div>
-            <h1 className={styles.links__title}>АДРЕС</h1>
+            <h1 className={styles.links__title}>АДРЕСА</h1>
             <ul className={styles.menu__block}>
               <li>м.Київ пр.Відрадний, 95</li>
             </ul>

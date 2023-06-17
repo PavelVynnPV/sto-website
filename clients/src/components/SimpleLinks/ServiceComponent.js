@@ -24,7 +24,7 @@ const ServiceComponent = ({ service }) => {
             >
               <div className={styles.warning}>
               <i class="fa-solid fa-arrow-up"></i>
-              <p>{service_item.warning}</p>
+              <p>{service.warning}</p>
               <i class="fa-solid fa-arrow-up"></i>
               </div>
             </li>

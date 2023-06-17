@@ -43,6 +43,8 @@ const CommentForm = () => {
         console.log(data.message); // Вывод сообщения об успешном создании комментария
         setAuthor("");
         setContent("");
+        setEmail("");
+        setOrderNumber("");
       })
       .catch((error) => console.error(error));
   };

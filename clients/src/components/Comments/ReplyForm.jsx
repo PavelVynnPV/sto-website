@@ -34,6 +34,7 @@ const ReplyForm = ({ commentId, setComments }) => {
         // Сброс полей формы
         setAuthor("");
         setContent("");
+        setEmail("");
       })
       .catch((error) => console.error(error));
   };
@@ -69,7 +70,7 @@ const ReplyForm = ({ commentId, setComments }) => {
           required
         ></textarea>
       </div>
-      <button className={styles.form__button} type="submit">Отправить ответ</button>{" "}
+      <button className={styles.form__button} type="submit">Відповісти</button>{" "}
     </form>
   );
 };

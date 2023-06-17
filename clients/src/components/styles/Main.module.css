@@ -429,8 +429,21 @@
   max-width: 1140px;
   margin: auto;
 }
-.contacts iframe {
-  max-width: 540px;
+.contacts__map {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.contacts__map {
+  max-width: 450px;
+}
+.contacts img:nth-child(1) {
+  max-width: 200px;
+}
+.contacts img {
+  max-width: 100%;
 }
 
 .contacts__info {

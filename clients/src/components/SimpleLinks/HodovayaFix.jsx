@@ -5,7 +5,7 @@ import ServiceComponent from "./ServiceComponent";
 
 const Hodovaya = () => {
   return (
-    <section className={styles.hodovaya__block}>
+    <section className={styles.service__block}>
       <div className={styles.service__content}>
         <div className={styles.hodovaya__banner}>
           <h1 className={styles.service__banner_title}>
