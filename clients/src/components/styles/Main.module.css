@@ -613,12 +613,12 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 390px) {
   .advances__title::after {
-    left: 18%;
+    left: 22%;
   }
   .diagnostic .advances__title::after {
-    left: 18%;
+    left: 22%;
   }
   .fix__block::after {
     background-size: contain;

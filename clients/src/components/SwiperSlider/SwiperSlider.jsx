@@ -21,7 +21,6 @@ const SwiperSlider = () => {
   return (
     <>
       <Swiper
-        loop={true}
         spaceBetween={0}
         speed={500}
         effect={"fade"}
