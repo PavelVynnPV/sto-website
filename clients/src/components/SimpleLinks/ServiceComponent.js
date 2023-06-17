@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Main.module.css";
 
 const ServiceComponent = ({ service }) => {
+  console.log(service?.warning)
   return (
     <>
       <ul className={styles.service_table}>
@@ -9,7 +10,10 @@ const ServiceComponent = ({ service }) => {
           <span>Послуги</span>
           <span>Ціни</span>
         </li>
-        {service.map((service_item) => (
+        {service.map((service_item) => {
+          let newText = service_item.warning.charAt(0).toUpperCase() + service_item.warning.slice(1);
+
+          return(
           <>
             <li>
               <span>{service_item.name}</span>
@@ -24,13 +28,13 @@ const ServiceComponent = ({ service }) => {
             >
               <div className={styles.warning}>
               <i class="fa-solid fa-arrow-up"></i>
-              <p>{service.warning}</p>
+              <p>{newText}</p>
               <i class="fa-solid fa-arrow-up"></i>
               </div>
             </li>
           </>
           
-        ))}
+        )})}
         
       </ul>
     </>

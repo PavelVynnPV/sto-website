@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/sto-website/static/css/main.cff80939.css",
-    "main.js": "/sto-website/static/js/main.c17cccbc.js",
+    "main.css": "/sto-website/static/css/main.0beb2c6e.css",
+    "main.js": "/sto-website/static/js/main.91b4287e.js",
     "static/media/autodiagnostic.jpeg": "/sto-website/static/media/autodiagnostic.d50606fdef50052608fa.jpeg",
+    "static/media/map_img.png": "/sto-website/static/media/map_img.a0cc444ee22f2712dedb.png",
     "static/media/tehService.jpeg": "/sto-website/static/media/tehService.3c2af8d4e5611c0a5a8b.jpeg",
     "static/media/hodova.jpg": "/sto-website/static/media/hodova.dd184fb496f4018cf87d.jpg",
     "static/media/slider_second.jpg": "/sto-website/static/media/slider_second.dd184fb496f4018cf87d.jpg",
@@ -10,6 +11,7 @@
     "static/media/electric.jpg": "/sto-website/static/media/electric.d26d55aa88c075924ec0.jpg",
     "static/media/hodovaya_img.jpeg": "/sto-website/static/media/hodovaya_img.ecee3a772b3a25b799b5.jpeg",
     "static/media/slider_third.jpg": "/sto-website/static/media/slider_third.9edcf68d8791ddf3fccc.jpg",
+    "static/media/logo_upper_map.png": "/sto-website/static/media/logo_upper_map.8c7c3004b1cf3e9e1505.png",
     "static/media/other_services.jpg": "/sto-website/static/media/other_services.34cd3185b43b3fcbd4b9.jpg",
     "static/media/logo.png": "/sto-website/static/media/logo.9862b284c2a3dc320035.png",
     "static/media/fiat.png": "/sto-website/static/media/fiat.710e0955679d539d334c.png",
@@ -52,11 +54,11 @@
     "static/media/next_arrow_slider.svg": "/sto-website/static/media/next_arrow_slider.0670c75e9fc45680440d.svg",
     "static/media/prev_arrow_slider.svg": "/sto-website/static/media/prev_arrow_slider.e5c5bcc0af55dac6f8ac.svg",
     "static/media/mark.svg": "/sto-website/static/media/mark.f275e6d690f0e0952acf.svg",
-    "main.cff80939.css.map": "/sto-website/static/css/main.cff80939.css.map",
-    "main.c17cccbc.js.map": "/sto-website/static/js/main.c17cccbc.js.map"
+    "main.0beb2c6e.css.map": "/sto-website/static/css/main.0beb2c6e.css.map",
+    "main.91b4287e.js.map": "/sto-website/static/js/main.91b4287e.js.map"
   },
   "entrypoints": [
-    "static/css/main.cff80939.css",
-    "static/js/main.c17cccbc.js"
+    "static/css/main.0beb2c6e.css",
+    "static/js/main.91b4287e.js"
   ]
 }
