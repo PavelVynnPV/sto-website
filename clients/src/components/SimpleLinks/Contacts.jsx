@@ -17,7 +17,7 @@ const Contacts = () => {
               Номер телефона:<a href="tel:+380678001500">(067) 800-15-00</a>
             </p>
             <p className={styles.contacts__adress}>
-              Email: :
+              Email:
               <a href="mailto:andrcars.ua@gmail.com">andrcars.ua@gmail.com</a>
             </p>
             <span className={styles.contact__advice}>

@@ -1558,3 +1558,235 @@ export const auto_light = [
     warning: "",
   },
 ];
+
+////Auto Conditioner
+export const conditioner = [
+  {
+    serv_title: "",
+    name: "Заправка та обслуговування автокодиціонера",
+    price: "350грн.    ",
+    warning: "",
+  },
+  {
+    serv_title: "",
+    name: "Фреон 100 грам",
+    price: "90грн.    ",
+    warning: "",
+  }, 
+   {
+    serv_title: "",
+    name: "Антибактеріальне чищення системи кондиціювання салону + заміна фільтра салону    ",
+    price: "от 350грн.    ",
+    warning: "",
+  },
+];
+
+
+///ROZVAL
+export const rozval = [
+  {
+    serv_title: "",
+    name: "Развал-Схождение (Одна ось)	",
+    price: "400грн.    ",
+    warning: "",
+  },
+  {
+    serv_title: "",
+    name: "Развал-Схождение (Две оси)	",
+    price: "500грн.    ",
+    warning: "",
+  },
+  {
+    serv_title: "",
+    name: "Развал-Схождение (ВАЗ, Таврия)	",
+    price: "450грн.    ",
+    warning: "",
+  },
+  {
+    serv_title: "",
+    name: "Развал-Схождение Кроссоверы, Комерческая группа (Одна ось)	",
+    price: "450грн.    ",
+    warning: "",
+  },
+  {
+    serv_title: "",
+    name: "Развал-Схождение Кроссоверы, Комерческая группа (Две оси)	",
+    price: "550грн.    ",
+    warning: "",
+  },
+
+];
+
+////TIRE
+
+
+
+
+export const tire_table1 = [
+{
+  size: "R 13-14 Ж",
+  setUp: "50",
+  tire: "50",
+  balance: "35",
+  one_circle: "135",
+  four_circle: "540"
+},
+{
+  size: "R 15-16 Ж",
+  setUp: "50",
+  tire: "60",
+  balance: "35",
+  one_circle: "145",
+  four_circle: "580"
+},
+{
+  size: "R - 13 Л",
+  setUp: "60",
+  tire: "50",
+  balance: "40",
+  one_circle: "150",
+  four_circle: "600"
+},
+{
+  size: "R - 14 Л",
+  setUp: "60",
+  tire: "60",
+  balance: "40",
+  one_circle: "160",
+  four_circle: "640"
+},
+{
+  size: "R - 15 Л",
+  setUp: "60",
+  tire: "60",
+  balance: "50",
+  one_circle: "170",
+  four_circle: "680"
+},
+{
+  size: "R - 16",
+  setUp: "60",
+  tire: "60",
+  balance: "60",
+  one_circle: "180",
+  four_circle: "720"
+},
+{
+  size: "R - 17 Л",
+  setUp: "60",
+  tire: "60",
+  balance: "70",
+  one_circle: "190",
+  four_circle: "760"
+},
+{
+  size: "R - 18 Л",
+  setUp: "70",
+  tire: "60",
+  balance: "70",
+  one_circle: "200",
+  four_circle: "800"
+},
+{
+  size: "R - 19 Л",
+  setUp: "70",
+  tire: "70",
+  balance: "70",
+  one_circle: "210",
+  four_circle: "840"
+},
+{
+  size: "R - 20 Л",
+  setUp: "80",
+  tire: "70",
+  balance: "70",
+  one_circle: "220",
+  four_circle: "880"
+}
+]
+
+export const tire_table2 = [
+  {
+    size: "R 15-16-17 Ж",
+    setUp: "70",
+    tire: "60",
+    balance: "70",
+    one_circle: "200",
+    four_circle: "800"
+  },
+  {
+    size: "R 15-16 Л",
+    setUp: "70",
+    tire: "70",
+    balance: "70",
+    one_circle: "210",
+    four_circle: "840"
+  },
+  {
+    size: "R 17-18 Л",
+    setUp: "70",
+    tire: "80",
+    balance: "80",
+    one_circle: "230",
+    four_circle: "920"
+  },
+  {
+    size: "R 19-20 Л",
+    setUp: "90",
+    tire: "80",
+    balance: "90",
+    one_circle: "260",
+    four_circle: "1040"
+  },
+  {
+    size: "R 21-22 Л",
+    setUp: "100",
+    tire: "100",
+    balance: "110",
+    one_circle: "310",
+    four_circle: "1240"
+  },
+  ]
+
+  export const tire_table3 = [
+    {
+      size: "R 14 Ж",
+      setUp: "70",
+      tire: "60",
+      balance: "60",
+      one_circle: "190",
+      four_circle: "760"
+    },
+    {
+      size: "R 14 Л",
+      setUp: "70",
+      tire: "60",
+      balance: "80",
+      one_circle: "210",
+      four_circle: "840"
+    },
+    {
+      size: "R 15-16-17 Ж",
+      setUp: "80",
+      tire: "80",
+      balance: "60",
+      one_circle: "220",
+      four_circle: "880"
+    },
+    {
+      size: "R 15-16 Л",
+      setUp: "80",
+      tire: "80",
+      balance: "80",
+      one_circle: "240",
+      four_circle: "960"
+    },
+    {
+      size: "R 17 Л",
+      setUp: "80",
+      tire: "80",
+      balance: "90",
+      one_circle: "250",
+      four_circle: "1000"
+    },
+    ]

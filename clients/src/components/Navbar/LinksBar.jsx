@@ -51,6 +51,12 @@ const LinksBar = ({ href }) => {
         window_location = "Ремонт ходової";
       } else if (paths[0] === "otherservices") {
         window_location = "Інші послуги автосервісу";
+      } else if (paths[0] === "autoconditioner") {
+        window_location = "Автокондиціонер";
+      } else if (paths[0] === "tirefitting") {
+        window_location = "Шиномонтаж";
+      } else if (paths[0] === "rozval") {
+        window_location = "Розвал-сходження 3D";
       } else {
         window_location = "";
       }
@@ -67,40 +73,114 @@ const LinksBar = ({ href }) => {
             openBurgerMenu ? styles.nav_burger_content : styles.nav__content
           }
         >
-          <Link to="/sto-website" onClick={() => setOpenMenu(false)}>Головна</Link>
+          <Link to="/sto-website" onClick={() => setOpenMenu(false)}>
+            Головна
+          </Link>
           <div className={styles.burger__block}>
             <Link className={styles.nav__menu} onClick={handleOpenMenu}>
               <div className={styles.links__menu_text}>
                 <span>Послуги</span>{" "}
                 <span className={styles.arrow_down_icon}></span>
               </div>
-             
             </Link>
             {openMenu ? (
-                <>
-                  <ul className={styles.active__menu}>
-                    <Link onClick={() => setOpenMenu(false)} to="/autodiagnostic">
-                      <li>Автодіагностика</li>
-                    </Link>
-                    <Link onClick={() => setOpenMenu(false)} to="/tehservice">
-                      <li>Технічне обслуговування</li>
-                    </Link>
-                    <Link onClick={() => setOpenMenu(false)} to="/electric">
-                      <li>Автоелектрика</li>
-                    </Link>
-                    <Link onClick={() => setOpenMenu(false)} to="/hodovaya">
-                      <li>Ремонт ходової</li>
-                    </Link>
-                    <Link onClick={() => setOpenMenu(false)} to="/otherservices">
-                      <li>Інші послуги автосервісу</li>
-                    </Link>
-                  </ul>
-                </>
-              ) : null}
+              <>
+                <ul className={styles.active__menu}>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/autodiagnostic"
+                  >
+                    <li>Автодіагностика</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/tehservice"
+                  >
+                    <li>Технічне обслуговування</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/electric"
+                  >
+                    <li>Автоелектрика</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/hodovaya"
+                  >
+                    <li>Ремонт ходової</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/otherservices"
+                  >
+                    <li>Інші послуги автосервісу</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/autoconditioner"
+                  >
+                    <li>Автокондиціонер</li>
+                  </Link>{" "}
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/tirefitting"
+                  >
+                    <li>Шиномонтаж</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/rozval"
+                  >
+                    <li>Розвал-сходження 3D</li>
+                  </Link>
+                </ul>
+              </>
+            ) : null}
           </div>
 
-          <Link to="/comments" onClick={() => setOpenMenu(false)}>Відгуки</Link>
-          <Link to="/contacts" onClick={() => setOpenMenu(false)}>Контакти</Link>
+          <Link
+            to="/comments"
+            onClick={() => {
+              setOpenMenu(false);
+              setOpenBurgerMenu(false);
+            }}
+          >
+            Відгуки
+          </Link>
+          <Link
+            to="/contacts"
+            onClick={() => {
+              setOpenMenu(false);
+              setOpenBurgerMenu(false);
+            }}
+          >
+            Контакти
+          </Link>
           <div
             className={openBurgerMenu ? styles.close_modal : styles.unActive}
             onClick={handleOpenBurgerMenu}

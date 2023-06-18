@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LinksBar, Navbar } from "./components/Navbar";
 import { Main } from "./components/Main";
-import { Contacts, Electric, HodovayaFix, AutoDiagnostic, TehService, OtherServices } from "./components/SimpleLinks";
+import { Contacts, Electric, HodovayaFix, AutoDiagnostic, TehService, OtherServices, AutoConditioner, TireFitting, Rozval } from "./components/SimpleLinks";
 import {Footer} from "./components/Footer";
 import { CommentForm } from "./components/Comments";
 
@@ -20,6 +20,9 @@ const AppRoutes = ({href}) => {
         <Route exact path="/tehservice" element={<TehService/>}/>
         <Route exact path="/otherservices" element={<OtherServices/>}/>
         <Route exact path="/comments" element={<CommentForm/>}/>
+        <Route exact path="/autoconditioner" element={<AutoConditioner/>}/>
+        <Route exact path="/tirefitting" element={<TireFitting/>}/>
+        <Route exact path="/rozval" element={<Rozval/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

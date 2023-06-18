@@ -145,3 +145,11 @@ ul {
     gap: 10px !important;
   }
 }
+@media (max-width: 480px) {
+  .footer__container .first_links_block:nth-child(2) .links_block:nth-child(1) {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+  }
+}
