@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sto-website/static/css/main.50799e78.css",
-    "main.js": "/sto-website/static/js/main.744ad265.js",
+    "main.css": "/sto-website/static/css/main.c574e2f7.css",
+    "main.js": "/sto-website/static/js/main.0539e752.js",
     "static/media/autodiagnostic.jpeg": "/sto-website/static/media/autodiagnostic.d50606fdef50052608fa.jpeg",
     "static/media/map_img.png": "/sto-website/static/media/map_img.a0cc444ee22f2712dedb.png",
     "static/media/tehService.jpeg": "/sto-website/static/media/tehService.3c2af8d4e5611c0a5a8b.jpeg",
@@ -14,11 +14,13 @@
     "static/media/conditioner_img.jpeg": "/sto-website/static/media/conditioner_img.f16a91464b4c483ca51e.jpeg",
     "static/media/slider_third.jpg": "/sto-website/static/media/slider_third.9edcf68d8791ddf3fccc.jpg",
     "static/media/tire.jpg": "/sto-website/static/media/tire.14d723617dea1d1712a0.jpg",
+    "static/media/logo4.png": "/sto-website/static/media/logo4.019af215f0b01103b76e.png",
     "static/media/logo_upper_map.png": "/sto-website/static/media/logo_upper_map.8c7c3004b1cf3e9e1505.png",
     "static/media/other_services.jpg": "/sto-website/static/media/other_services.34cd3185b43b3fcbd4b9.jpg",
-    "static/media/logo.png": "/sto-website/static/media/logo.9862b284c2a3dc320035.png",
+    "static/media/condicioner_fix.jpeg": "/sto-website/static/media/condicioner_fix.80aaf9fa93177f5f778e.jpeg",
     "static/media/fiat.png": "/sto-website/static/media/fiat.710e0955679d539d334c.png",
     "static/media/subaru.png": "/sto-website/static/media/subaru.c5de2fca3a33b91717e5.png",
+    "static/media/3d_rozval_fix.jpeg": "/sto-website/static/media/3d_rozval_fix.7c4ba65a9d667d0c8f36.jpeg",
     "static/media/landRover.png": "/sto-website/static/media/landRover.465074aa7d66f8c7d732.png",
     "static/media/alphaRomeo.png": "/sto-website/static/media/alphaRomeo.39fd39ba37e60884c69c.png",
     "static/media/porsche.png": "/sto-website/static/media/porsche.3633f698d5a14126b28b.png",
@@ -57,11 +59,11 @@
     "static/media/next_arrow_slider.svg": "/sto-website/static/media/next_arrow_slider.0670c75e9fc45680440d.svg",
     "static/media/prev_arrow_slider.svg": "/sto-website/static/media/prev_arrow_slider.e5c5bcc0af55dac6f8ac.svg",
     "static/media/mark.svg": "/sto-website/static/media/mark.f275e6d690f0e0952acf.svg",
-    "main.50799e78.css.map": "/sto-website/static/css/main.50799e78.css.map",
-    "main.744ad265.js.map": "/sto-website/static/js/main.744ad265.js.map"
+    "main.c574e2f7.css.map": "/sto-website/static/css/main.c574e2f7.css.map",
+    "main.0539e752.js.map": "/sto-website/static/js/main.0539e752.js.map"
   },
   "entrypoints": [
-    "static/css/main.50799e78.css",
-    "static/js/main.744ad265.js"
+    "static/css/main.c574e2f7.css",
+    "static/js/main.0539e752.js"
   ]
 }
