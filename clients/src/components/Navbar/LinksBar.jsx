@@ -109,15 +109,6 @@ const LinksBar = ({ href }) => {
                       setOpenMenu(false);
                       setOpenBurgerMenu(false);
                     }}
-                    to="/electric"
-                  >
-                    <li>Автоелектрика</li>
-                  </Link>
-                  <Link
-                    onClick={() => {
-                      setOpenMenu(false);
-                      setOpenBurgerMenu(false);
-                    }}
                     to="/hodovaya"
                   >
                     <li>Ремонт ходової</li>

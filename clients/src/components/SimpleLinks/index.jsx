@@ -1,4 +1,3 @@
-export {default as Electric} from "./Electric"
 export {default as HodovayaFix} from "./HodovayaFix"
 export {default as AutoDiagnostic} from "./AutoDiagnostic"
 export {default as TehService} from "./TehService"

@@ -79,9 +79,6 @@ const Main = () => {
             <Link to="/tehservice" className={styles.fix__block}>
               <p className={styles.fix__block_text}>Технічне обслуговування</p>
             </Link>
-            <Link to="/electric" className={styles.fix__block}>
-              <p className={styles.fix__block_text}>Автоелектрика</p>
-            </Link>
             <Link to="/hodovaya" className={styles.fix__block}>
               <p className={styles.fix__block_text}>Ремонт ходової</p>
             </Link>

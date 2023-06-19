@@ -25,13 +25,10 @@ const Footer = () => {
             <h1 className={styles.links__title}>ПОСЛУГИ</h1>
             <ul className={styles.menu__block}>
               <Link to="/autodiagnostic">
-                <li>Автоелектрик</li>
+                <li>Автодіагностика</li>
               </Link>
               <Link to="/tehservice">
                 <li>Технічне обслуговування</li>
-              </Link>
-              <Link to="/electric">
-                <li>Послуги автоелектрика</li>
               </Link>
               <Link to="/hodovaya">
                 <li>Ремонт ходової</li>
