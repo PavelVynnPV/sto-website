@@ -42,7 +42,6 @@ const TireFitting = () => {
           <br />
           Звертайтесь до нас сьогодні, і ми з радістю забезпечимо ваш автомобіль
           оптимальними шинами та бездоганним шиномонтажем!"
-        </div>
         <div className={styles.tire_content}>
           <TireComponent service={tire_table1} />
         </div>
@@ -56,6 +55,7 @@ const TireFitting = () => {
         <div className={styles.tire_content}>
           <h2 className={styles.service__title}>МІКРОАВТОБУС/ВАНТАЖНИЙ</h2>
           <TireComponent service={tire_table3} />{" "}
+        </div>
         </div>
       </div>
     </section>

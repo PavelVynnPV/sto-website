@@ -455,7 +455,7 @@ table tr {
 table td {
   border-left: 1px solid #000;
   height: 100%;
-  padding: 10px 0;
+  padding: 10px;
   margin: 0;
   transition: 0.4s all ease;
 }
@@ -463,8 +463,9 @@ table tr:hover {
   background-color: #54b0df;
 }
 .tire_content {
-  width: 1060px;
+  width: 100%;
   margin: auto;
+  overflow-x: scroll;
 }
 
 

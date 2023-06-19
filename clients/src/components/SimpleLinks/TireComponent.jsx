@@ -7,7 +7,7 @@ const TireComponent = ({service}) => {
       <table>
         <tr>
           <td>РОЗМІР</td>
-          <td>ЗНЯТТЯ/ ВСТАНОВЛЕННЯ</td>
+          <td>ЗНЯТТЯ/<br/> ВСТАНОВЛЕННЯ</td>
           <td>ШИНОМОНТАЖ</td>
           <td>БАЛАНСУВАННЯ</td>
           <td>1 КОЛЕСО</td>

@@ -377,6 +377,15 @@ nav {
   .link_view {
     padding: 0 0 0px 20px;
   }
+  .header__schedule_content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .header__map_adress {
+    max-width: 150px;
+  }
 }
 
 
