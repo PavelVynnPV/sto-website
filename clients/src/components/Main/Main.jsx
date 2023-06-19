@@ -73,7 +73,6 @@ const Main = () => {
           завдання.
         </p>
         <div className={styles.fix__blocks_container}>
-          <div>
             <Link to="/autodiagnostic" className={styles.fix__block}>
               <p className={styles.fix__block_text}>Автодіагностика</p>
             </Link>
@@ -83,15 +82,21 @@ const Main = () => {
             <Link to="/electric" className={styles.fix__block}>
               <p className={styles.fix__block_text}>Автоелектрика</p>
             </Link>
-          </div>
-          <div>
             <Link to="/hodovaya" className={styles.fix__block}>
               <p className={styles.fix__block_text}>Ремонт ходової</p>
             </Link>
             <Link to="/otherservices" className={styles.fix__block}>
               <p className={styles.fix__block_text}>Інші послуги автосервісу</p>
             </Link>
-          </div>
+            <Link to="/autoconditioner" className={styles.fix__block}>
+              <p className={styles.fix__block_text}>Автокондиціонер</p>
+            </Link>
+            <Link to="/tirefitting" className={styles.fix__block}>
+              <p className={styles.fix__block_text}>Шиномонтаж</p>
+            </Link>
+            <Link to="/rozval" className={styles.fix__block}>
+              <p className={styles.fix__block_text}>Розвал-сходження 3D</p>
+            </Link>
         </div>
       </section>
       <section className={styles.diagnostic}>

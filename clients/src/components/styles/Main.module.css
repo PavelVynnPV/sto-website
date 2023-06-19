@@ -113,16 +113,13 @@
 }
 .fix__blocks_container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
-}
-.fix__blocks_container div {
-  display: flex;
-  gap: 25px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .fix__block {
   width: 325px;
@@ -159,20 +156,29 @@
   padding: 5px 10px;
   font-size: 1.5rem;
 }
-.fix__blocks_container div:nth-child(1) .fix__block:nth-child(1) {
+.fix__blocks_container .fix__block:nth-child(1) {
   background-image: url("../img/autodiagnostic.jpeg");
 }
-.fix__blocks_container div:nth-child(1) .fix__block:nth-child(2) {
+.fix__blocks_container .fix__block:nth-child(2) {
   background-image: url("../img/tehService.jpeg");
 }
-.fix__blocks_container div:nth-child(1) .fix__block:nth-child(3) {
+.fix__blocks_container .fix__block:nth-child(3) {
   background-image: url("../img/electric.jpg");
 }
-.fix__blocks_container div:nth-child(2) .fix__block:nth-child(1) {
+.fix__blocks_container .fix__block:nth-child(4) {
   background-image: url("../img/hodovaya_img.jpeg");
 }
-.fix__blocks_container div:nth-child(2) .fix__block:nth-child(2) {
+.fix__blocks_container .fix__block:nth-child(5) {
   background-image: url("../img/other_services.jpg");
+}
+.fix__blocks_container .fix__block:nth-child(6) {
+  background-image: url("../img/condicioner_fix.jpeg");
+}
+.fix__blocks_container .fix__block:nth-child(7) {
+  background-image: url("../img/tire.jpg");
+}
+.fix__blocks_container .fix__block:nth-child(8) {
+  background-image: url("../img/3d_rozval_fix.jpeg");
 }
 
 /* //////diagnostic */
