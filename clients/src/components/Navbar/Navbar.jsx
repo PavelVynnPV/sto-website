@@ -6,7 +6,9 @@ const Navbar = () => {
   return (
     <header>
       <div className={styles.header__content}>
-        <Link to="/" className={styles.header__img_logo}></Link>
+        <Link to="/sto-website" className={styles.header__img_logo}>
+          <span className={styles.header__img_logo_span}></span>
+        </Link>
         <div className={styles.header__phone_content}>
           <span className={styles.phone_icon}></span>
           <a href="tel:+380678001500" className={styles.header__phone}>

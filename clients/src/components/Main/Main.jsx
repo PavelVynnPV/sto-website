@@ -10,7 +10,7 @@ const Main = () => {
       <section className={styles.advances}>
         <div className={styles.advances__container}>
           <h1 className={styles.advances__title}>
-            Чому варте співпрацювати з СТО «ANDRCARS»
+            Чому варто співпрацювати з СТО «ANDRCARS»
           </h1>
           <div className={styles.advances__blocks_container}>
             <div className={styles.advances__block}>

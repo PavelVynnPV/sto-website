@@ -266,7 +266,7 @@
 .active {
   display: flex;
 }
-#autoDiagnostic_block .service_table li:nth-child(2){
+#autoDiagnostic_block .service_table li:nth-child(2) {
   background-color: #241d1d41 !important;
   font-weight: bold;
 }
@@ -440,14 +440,15 @@ table {
   border: 1px solid #000;
   border-collapse: collapse;
   margin: 3rem 0;
+  background-color: #fff;
 }
 table tr:nth-child(1) {
-  background-color: #241d1d ;
+  background-color: #241d1d;
   color: #fff;
   font-weight: bold;
 }
 table tr:nth-child(1):hover {
-  background-color: #241d1d ;
+  background-color: #241d1d;
 }
 table tr {
   border-bottom: 1px solid #000 !important;
@@ -465,9 +466,7 @@ table tr:hover {
 .tire_content {
   width: 100%;
   margin: auto;
-  overflow-x: scroll;
 }
-
 
 /* //////CONTACTS */
 
@@ -596,7 +595,6 @@ table tr:hover {
   .contacts__info {
     max-width: 440px !important;
   }
-  
 }
 
 @media (max-width: 1055px) {
@@ -616,6 +614,9 @@ table tr:hover {
   }
   .about__right_side img {
     margin-left: 0 !important;
+  }
+  .tire_content {
+    overflow-x: scroll;
   }
 }
 
