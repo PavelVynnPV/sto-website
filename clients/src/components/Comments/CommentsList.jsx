@@ -13,9 +13,11 @@ const CommentsList = () => {
   useEffect(() => {
     fetch("https://sto-web-pv.onrender.com/comments")
       .then((response) => response.json())
-      .then((data) => setComments(data))
+      .then((data) => {setComments(data) ; console.log(data)})
       .catch((error) => console.error(error));
   }, []);
+
+  console.log(comments)
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * PageSize;

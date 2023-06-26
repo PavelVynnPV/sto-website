@@ -6,6 +6,7 @@ const ReplyForm = ({ commentId, setComments }) => {
   const [content, setContent] = useState("");
   const [day, setDay] = useState("");
   const [email, setEmail] = useState("");
+  const [isValid, setIsValid] = useState(false);
 
   useEffect(() => {
     const date = new Date();
@@ -13,9 +14,29 @@ const ReplyForm = ({ commentId, setComments }) => {
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
     const formattedDate = `${day}.${month}.${year}`;
-  
+
     setDay(formattedDate);
   }, []);
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  useEffect(() => {
+    const verifyEmail = () => {
+      // Regular expression pattern for email validation
+      const pattern = /^[\w\.-]+@[\w\.-]+\.\w+$/;
+  
+      // Use the pattern to match the email address
+      if (pattern.test(email)) {
+        setIsValid(true);
+      } else {
+        setIsValid(false);
+      }
+    };
+  
+    verifyEmail();
+  }, [email])
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -57,9 +78,17 @@ const ReplyForm = ({ commentId, setComments }) => {
           type="text"
           id="email"
           value={email}
-          onChange={(event) => setEmail(event.target.value)}
+          onChange={(event) => {
+            setEmail(event.target.value);
+            handleEmailChange(event);
+          }}
           required
         />
+        {!isValid ? (
+          <p className={email.length > 1 ? styles.red_error : styles.unActive}>
+            Email введений невірно*
+          </p>
+        ) : null}
       </div>
       <div className={styles.form__inputs}>
         <label htmlFor="content">Коментар:</label>
@@ -70,7 +99,9 @@ const ReplyForm = ({ commentId, setComments }) => {
           required
         ></textarea>
       </div>
-      <button className={styles.form__button} type="submit">Відповісти</button>{" "}
+      <button className={styles.form__button} type="submit" disabled={!isValid}>
+        Відповісти
+      </button>{" "}
     </form>
   );
 };

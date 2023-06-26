@@ -9,6 +9,7 @@ const CommentForm = () => {
   const [content, setContent] = useState("");
   const [day, setDay] = useState("");
   const [starRate, setStarRate] = useState(0);
+  const [isValid, setIsValid] = useState(false);
 
   useEffect(() => {
     const date = new Date();
@@ -28,6 +29,26 @@ const CommentForm = () => {
     setDay(formattedDate);
   }, []);
 
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  useEffect(() => {
+    const verifyEmail = () => {
+      // Regular expression pattern for email validation
+      const pattern = /^[\w\.-]+@[\w\.-]+\.\w+$/;
+  
+      // Use the pattern to match the email address
+      if (pattern.test(email)) {
+        setIsValid(true);
+      } else {
+        setIsValid(false);
+      }
+    };
+  
+    verifyEmail();
+  }, [email]);
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -36,7 +57,14 @@ const CommentForm = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ author, content, day, starRate, email, orderNumber }),
+      body: JSON.stringify({
+        author,
+        content,
+        day,
+        starRate,
+        email,
+        orderNumber,
+      }),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -48,9 +76,7 @@ const CommentForm = () => {
       })
       .catch((error) => console.error(error));
   };
-  console.log(author)
-  console.log(email)
-  console.log(orderNumber)
+
   return (
     <div className={styles.comment_form}>
       <CommentsList />
@@ -104,9 +130,14 @@ const CommentForm = () => {
           <input
             type="text"
             value={email}
-            onChange={(event) => setEmail(event.target.value)}
+            onChange={(event) => {
+              setEmail(event.target.value);
+              handleEmailChange(event);
+            }}
+            className={styles.email_inp}
             required
           />
+          {!isValid ? <p className={email.length > 1 ? styles.red_error : styles.unActive}>Email введений невірно*</p> : null}
         </div>
         <div className={styles.form__inputs}>
           <label>Номер заказ-наряда:</label>
@@ -125,9 +156,13 @@ const CommentForm = () => {
             required
           ></textarea>
         </div>
-        <button className={styles.form__button} type="submit">Відправити</button>
+        <button
+          className={styles.form__button}
+          type="submit"
+        >
+          Відправити
+        </button>
       </form>
-
     </div>
   );
 };
