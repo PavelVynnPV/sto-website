@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sto-website/static/css/main.d93a6319.css",
-    "main.js": "/sto-website/static/js/main.35f37450.js",
+    "main.js": "/sto-website/static/js/main.59c695f2.js",
     "static/media/autodiagnostic.jpeg": "/sto-website/static/media/autodiagnostic.d50606fdef50052608fa.jpeg",
     "static/media/map_img.png": "/sto-website/static/media/map_img.a0cc444ee22f2712dedb.png",
     "static/media/tehService.jpeg": "/sto-website/static/media/tehService.3c2af8d4e5611c0a5a8b.jpeg",
@@ -60,10 +60,10 @@
     "static/media/prev_arrow_slider.svg": "/sto-website/static/media/prev_arrow_slider.e5c5bcc0af55dac6f8ac.svg",
     "static/media/mark.svg": "/sto-website/static/media/mark.f275e6d690f0e0952acf.svg",
     "main.d93a6319.css.map": "/sto-website/static/css/main.d93a6319.css.map",
-    "main.35f37450.js.map": "/sto-website/static/js/main.35f37450.js.map"
+    "main.59c695f2.js.map": "/sto-website/static/js/main.59c695f2.js.map"
   },
   "entrypoints": [
     "static/css/main.d93a6319.css",
-    "static/js/main.35f37450.js"
+    "static/js/main.59c695f2.js"
   ]
 }
