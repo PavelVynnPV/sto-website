@@ -7,6 +7,7 @@ const Main = () => {
   return (
     <>
       <SwiperSlider />
+      WAWAWAWAWAWAWAWAW
       <section className={styles.advances}>
         <div className={styles.advances__container}>
           <h1 className={styles.advances__title}>
