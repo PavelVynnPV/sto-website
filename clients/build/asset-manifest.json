@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sto-website/static/css/main.c574e2f7.css",
-    "main.js": "/sto-website/static/js/main.44209150.js",
+    "main.css": "/sto-website/static/css/main.d93a6319.css",
+    "main.js": "/sto-website/static/js/main.35f37450.js",
     "static/media/autodiagnostic.jpeg": "/sto-website/static/media/autodiagnostic.d50606fdef50052608fa.jpeg",
     "static/media/map_img.png": "/sto-website/static/media/map_img.a0cc444ee22f2712dedb.png",
     "static/media/tehService.jpeg": "/sto-website/static/media/tehService.3c2af8d4e5611c0a5a8b.jpeg",
@@ -45,25 +45,25 @@
     "static/media/daewoo.png": "/sto-website/static/media/daewoo.96ac81466340e213a94e.png",
     "static/media/volkswagen.png": "/sto-website/static/media/volkswagen.8dc2fc58d0540e72f7b9.png",
     "static/media/audi.png": "/sto-website/static/media/audi.885f1b00d7c87ff6980d.png",
-    "static/media/payments.svg": "/sto-website/static/media/payments.aba88eceda790e93347d.svg",
-    "static/media/whatsapp-icon.svg": "/sto-website/static/media/whatsapp-icon.ee192a775f7676fb568b.svg",
-    "static/media/viber-icon.svg": "/sto-website/static/media/viber-icon.056d858d5269982afcef.svg",
-    "static/media/advances_time.svg": "/sto-website/static/media/advances_time.d792df8e376d8d09854a.svg",
-    "static/media/advances_man.svg": "/sto-website/static/media/advances_man.67d43bbe647d4962436f.svg",
-    "static/media/advances_repair.svg": "/sto-website/static/media/advances_repair.c8f593699229b436e4b1.svg",
+    "static/media/payments.svg": "/sto-website/static/media/payments.89b5ba56e87c1856956e.svg",
+    "static/media/whatsapp-icon.svg": "/sto-website/static/media/whatsapp-icon.273437b8fafa8e788f75.svg",
+    "static/media/viber-icon.svg": "/sto-website/static/media/viber-icon.d5859868ebbcea960305.svg",
+    "static/media/advances_time.svg": "/sto-website/static/media/advances_time.8ccd5aa69eedd5e7a6ff.svg",
+    "static/media/advances_man.svg": "/sto-website/static/media/advances_man.99c140b52db1f3496aef.svg",
+    "static/media/advances_repair.svg": "/sto-website/static/media/advances_repair.d429111a276fcd9ccf47.svg",
     "index.html": "/sto-website/index.html",
-    "static/media/advances_secure.svg": "/sto-website/static/media/advances_secure.d23345daaabc05390004.svg",
-    "static/media/telegram-icon.svg": "/sto-website/static/media/telegram-icon.c49b9f339184d3177a4f.svg",
+    "static/media/advances_secure.svg": "/sto-website/static/media/advances_secure.4f0b62b74fd6a190e6d9.svg",
+    "static/media/telegram-icon.svg": "/sto-website/static/media/telegram-icon.74730279a6f5ac61df40.svg",
     "static/media/phone.svg": "/sto-website/static/media/phone.41f5fdfea1500d71b105.svg",
     "static/media/down_arrow.svg": "/sto-website/static/media/down_arrow.a366d6c8c65b4a77c720.svg",
     "static/media/next_arrow_slider.svg": "/sto-website/static/media/next_arrow_slider.0670c75e9fc45680440d.svg",
     "static/media/prev_arrow_slider.svg": "/sto-website/static/media/prev_arrow_slider.e5c5bcc0af55dac6f8ac.svg",
     "static/media/mark.svg": "/sto-website/static/media/mark.f275e6d690f0e0952acf.svg",
-    "main.c574e2f7.css.map": "/sto-website/static/css/main.c574e2f7.css.map",
-    "main.44209150.js.map": "/sto-website/static/js/main.44209150.js.map"
+    "main.d93a6319.css.map": "/sto-website/static/css/main.d93a6319.css.map",
+    "main.35f37450.js.map": "/sto-website/static/js/main.35f37450.js.map"
   },
   "entrypoints": [
-    "static/css/main.c574e2f7.css",
-    "static/js/main.44209150.js"
+    "static/css/main.d93a6319.css",
+    "static/js/main.35f37450.js"
   ]
 }
