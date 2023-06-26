@@ -103,6 +103,13 @@ const CommentsList = () => {
             )}
           </div>
         ))}
+         <Pagination
+          className={styles.pagination_bar}
+          currentPage={currentPage}
+          totalCount={comments.length}
+          pageSize={PageSize}
+          onPageChange={(page) => setCurrentPage(page)}
+        />
       </div>
     </section>
   );
