@@ -36,7 +36,7 @@ const CommentForm = () => {
   useEffect(() => {
     const verifyEmail = () => {
       // Regular expression pattern for email validation
-      const pattern = /^[\w\.-]+@[\w\.-]+\.\w+$/;
+      const pattern = /^[\w.-]+@[\w.-]+\.\w+$/;
   
       // Use the pattern to match the email address
       if (pattern.test(email)) {
