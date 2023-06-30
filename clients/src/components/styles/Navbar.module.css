@@ -316,6 +316,8 @@ nav {
     top: -19px;
     border-left: 2px solid #fff;
     padding-left: 20px;
+    overflow-y: auto;
+    height: 600px;
   }
   .active__menu a {
     color: #fff;
@@ -363,7 +365,9 @@ nav {
     border-bottom: 3px solid #fff;
     border-left: 0;
     padding: 0;
-    position: initial;
+    left: 0;
+    top: 60px;
+    height: 480px;
   }
   .burger__block {
     display: flex;

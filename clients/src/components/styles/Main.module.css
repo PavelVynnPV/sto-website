@@ -160,25 +160,49 @@
   background-image: url("../img/autodiagnostic.jpeg");
 }
 .fix__blocks_container .fix__block:nth-child(2) {
-  background-image: url("../img/tehService.jpeg");
+  background-image: url("../img/hodova.jpg");
 }
 .fix__blocks_container .fix__block:nth-child(3) {
-  background-image: url("../img/electric.jpg");
-}
-.fix__blocks_container .fix__block:nth-child(4) {
-  background-image: url("../img/hodovaya_img.jpeg");
-}
-.fix__blocks_container .fix__block:nth-child(5) {
   background-image: url("../img/other_services.jpg");
 }
-.fix__blocks_container .fix__block:nth-child(6) {
+.fix__blocks_container .fix__block:nth-child(4) {
   background-image: url("../img/condicioner_fix.jpeg");
 }
-.fix__blocks_container .fix__block:nth-child(7) {
+.fix__blocks_container .fix__block:nth-child(5) {
   background-image: url("../img/tire.jpg");
 }
-.fix__blocks_container .fix__block:nth-child(8) {
+.fix__blocks_container .fix__block:nth-child(6) {
   background-image: url("../img/3d_rozval_fix.jpeg");
+}
+.fix__blocks_container .fix__block:nth-child(7) {
+  background-image: url("../img/engine_fix.jpeg");
+}
+.fix__blocks_container .fix__block:nth-child(8) {
+  background-image: url("../img/fluids_imgs.jpg");
+}
+.fix__blocks_container .fix__block:nth-child(9) {
+  background-image: url("../img/break_imgs.jpg");
+}
+.fix__blocks_container .fix__block:nth-child(10) {
+  background-image: url("../img/steering_imgs.jpg");
+}
+.fix__blocks_container .fix__block:nth-child(11) {
+  background-image: url("../img/belt_imgs.jpg");
+}
+.fix__blocks_container .fix__block:nth-child(12) {
+  background-image: url("../img/cooling_imgs.jpg");
+}
+.fix__blocks_container .fix__block:nth-child(13) {
+  background-image: url("../img/clutch_imgs.webp");
+}
+.fix__blocks_container .fix__block:nth-child(14) {
+  background-image: url("../img/injection_imgs.jpg");
+}
+.fix__blocks_container .fix__block:nth-child(15) {
+  background-image: url("../img/engines_imgs.jpg");
+}
+.fix__blocks_container .fix__block:nth-child(16) {
+  background-image: url("../img/radiator_imgs.jpg");
 }
 
 /* //////diagnostic */
@@ -294,8 +318,18 @@
 .hodovaya__banner,
 .rozval__banner,
 .conditioner__banner,
+.radiator__banner,
+.replacement_belts__banner,
+.clutch__banner,
+.cooling_system__banner,
+.injection__banner,
+.ignition__banner,
+.steering__banner,
 .electric__banner,
+.tehfluids__banner,
+.braksystem__banner,
 .tire__banner,
+.engine__banner,
 .other_services__banner,
 .tehservice__banner {
   height: 375px;
@@ -321,11 +355,21 @@
 }
 .autodiagnostic__banner::after,
 .hodovaya__banner::after,
+.tehfluids__banner::after,
 .tire__banner::after,
+.cooling_system__banner::after,
 .rozval__banner::after,
+.braksystem__banner::after,
+.radiator__banner::after,
 .conditioner__banner::after,
+.steering__banner::after,
 .other_services__banner::after,
+.clutch__banner::after,
 .electric__banner::after,
+.ignition__banner::after,
+.injection__banner::after,
+.replacement_belts__banner::after,
+.engine__banner::after,
 .tehservice__banner::after {
   content: "";
   width: 100%;
@@ -381,7 +425,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  text-align: center;
+  color: red;
 }
 .service_table li:hover {
   background-color: #54b0df;
@@ -415,6 +459,36 @@
 
 .autodiagnostic__banner {
   background-image: url("../img/autodiagnostic.jpeg");
+}
+.ignition__banner {
+  background-image: url("../img/engines_imgs.jpg");
+}
+.radiator__banner {
+  background-image: url("../img/radiator_imgs.jpg");
+}
+.clutch__banner {
+  background-image: url("../img/clutch_imgs.webp");
+}
+.injection__banner {
+  background-image: url("../img/injection_imgs.jpg");
+}
+.cooling_system__banner {
+  background-image: url("../img/cooling_imgs.jpg");
+}
+.replacement_belts__banner {
+  background-image: url("../img/belt_imgs.jpg");
+}
+.braksystem__banner {
+  background-image: url("../img/break_imgs.jpg");
+}
+.steering__banner {
+  background-image: url("../img/steering_imgs.jpg");
+}
+.tehfluids__banner {
+  background-image: url("../img/fluids_imgs.jpg");
+}
+.engine__banner {
+  background-image: url("../img/engine_imgs.jpg");
 }
 .tehservice__banner {
   background-image: url("../img/tehService.jpeg");
@@ -540,6 +614,65 @@ table tr:hover {
   display: flex;
   flex-direction: row !important;
 }
+.all_services_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/all_services.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+}
+
+.all_services_btn::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background-color: #0000007e;
+  width: 100%;
+  height: 100%;
+  transition: 0.7s all ease;
+}
+
+.all_services {
+  font-size: 55px;
+  z-index: 3;
+}
+
+.all_services_btn:hover::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s all ease;
+  background-color: #000000b9;
+}
+
+/* /////////////ALL SERVICES */
+
+.allServices {
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.all_services_title {
+  font-size: 40px;
+  text-align: center;
+}
+
+
+
 
 @media (max-width: 1200px) {
   .service__info {
@@ -657,6 +790,11 @@ table tr:hover {
   }
   .diagnostic .advances__title::after {
     left: 30%;
+  }
+}
+@media (max-width: 450px) {
+  .all_services {
+    font-size: 30px;
   }
 }
 

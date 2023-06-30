@@ -7,7 +7,6 @@ const Main = () => {
   return (
     <>
       <SwiperSlider />
-      WAWAWAWAWAWAWAWAW
       <section className={styles.advances}>
         <div className={styles.advances__container}>
           <h1 className={styles.advances__title}>
@@ -73,29 +72,10 @@ const Main = () => {
           авто в Києві. Фахівці з багаторічним досвідом виконують найскладніші
           завдання.
         </p>
-        <div className={styles.fix__blocks_container}>
-            <Link to="/autodiagnostic" className={styles.fix__block}>
-              <p className={styles.fix__block_text}>Автодіагностика</p>
-            </Link>
-            <Link to="/tehservice" className={styles.fix__block}>
-              <p className={styles.fix__block_text}>Технічне обслуговування</p>
-            </Link>
-            <Link to="/hodovaya" className={styles.fix__block}>
-              <p className={styles.fix__block_text}>Ремонт ходової</p>
-            </Link>
-            <Link to="/otherservices" className={styles.fix__block}>
-              <p className={styles.fix__block_text}>Інші послуги автосервісу</p>
-            </Link>
-            <Link to="/autoconditioner" className={styles.fix__block}>
-              <p className={styles.fix__block_text}>Автокондиціонер</p>
-            </Link>
-            <Link to="/tirefitting" className={styles.fix__block}>
-              <p className={styles.fix__block_text}>Шиномонтаж</p>
-            </Link>
-            <Link to="/rozval" className={styles.fix__block}>
-              <p className={styles.fix__block_text}>Розвал-сходження 3D</p>
-            </Link>
-        </div>
+        <Link to="/allservices" className={styles.all_services_btn}>
+          <span className={styles.all_services}>Переглянути усі послуги</span>
+        </Link>
+        
       </section>
       <section className={styles.diagnostic}>
         <div className={styles.diagnostic__container}>

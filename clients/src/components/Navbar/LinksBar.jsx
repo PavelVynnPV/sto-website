@@ -1,14 +1,11 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "../styles/Navbar.module.css";
 
-const LinksBar = ({ href }) => {
+const LinksBar = ({ href, setWindowLocHref, windowLocHref, setLoc}) => {
   const [openMenu, setOpenMenu] = useState(false);
   const [openBurgerMenu, setOpenBurgerMenu] = useState(false);
   const [windowHref, setWindowHref] = useState("Головна");
-  const [windowLocHref, setWindowLocHref] = useState("");
   const location = useLocation();
   let paths = location.pathname.split("/").filter((path) => path !== "");
 
@@ -31,7 +28,8 @@ const LinksBar = ({ href }) => {
     if (href === "http://localhost:3000/") {
       setWindowHref("Головна");
     }
-  }, [href]);
+    setLoc(location)
+  }, [href, setLoc, location]);
 
   useEffect(() => {
     let window_location = "";
@@ -57,6 +55,28 @@ const LinksBar = ({ href }) => {
         window_location = "Шиномонтаж";
       } else if (paths[0] === "rozval") {
         window_location = "Розвал-сходження 3D";
+      } else if (paths[0] === "engine") {
+        window_location = "Ремон та обслуговування двигуна";
+      } else if (paths[0] === "tehfluids") {
+        window_location = "Заміна технічних рідин та фільтрів";
+      } else if (paths[0] === "braksystem") {
+        window_location = "Гальмівна система";
+      } else if (paths[0] === "steering") {
+        window_location = "Рульове управління";
+      } else if (paths[0] === "cooling_system") {
+        window_location = "Система охолодження";
+      } else if (paths[0] === "replacement_belts") {
+        window_location = "Заміна ременів та ланцюга приводу ГРМ";
+      } else if (paths[0] === "clutch") {
+        window_location = "Система зчеплення";
+      } else if (paths[0] === "injection") {
+        window_location = "Діагностика інжектора";
+      } else if (paths[0] === "ignition") {
+        window_location = "Система запалювання";
+      } else if (paths[0] === "radiator") {
+        window_location = "Промивка радіатора пічки";
+      } else if (paths[0] === "allservices") {
+        window_location = "Усі послуги";
       } else {
         window_location = "";
       }
@@ -64,7 +84,8 @@ const LinksBar = ({ href }) => {
 
     windowHrefChanger();
     setWindowLocHref(window_location);
-  }, [paths]);
+  }, [paths, setWindowLocHref]);
+
   return (
     <>
       <nav>
@@ -73,7 +94,7 @@ const LinksBar = ({ href }) => {
             openBurgerMenu ? styles.nav_burger_content : styles.nav__content
           }
         >
-          <Link to="/sto-website" onClick={() => setOpenMenu(false)}>
+          <Link to="/sto-website" onClick={() => {setOpenMenu(false); setOpenBurgerMenu(false)}}>
             Головна
           </Link>
           <div className={styles.burger__block}>
@@ -94,15 +115,6 @@ const LinksBar = ({ href }) => {
                     to="/autodiagnostic"
                   >
                     <li>Автодіагностика</li>
-                  </Link>
-                  <Link
-                    onClick={() => {
-                      setOpenMenu(false);
-                      setOpenBurgerMenu(false);
-                    }}
-                    to="/tehservice"
-                  >
-                    <li>Технічне обслуговування</li>
                   </Link>
                   <Link
                     onClick={() => {
@@ -148,6 +160,96 @@ const LinksBar = ({ href }) => {
                     to="/rozval"
                   >
                     <li>Розвал-сходження 3D</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/engine"
+                  >
+                    <li>Ремон та обслуговування двигуна</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/tehfluids"
+                  >
+                    <li>Заміна технічних рідин та фільтрів</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/braksystem"
+                  >
+                    <li>Гальмівна система</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/steering"
+                  >
+                    <li>Рульове управління</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/cooling_system"
+                  >
+                    <li>Система охолодження</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/replacement_belts"
+                  >
+                    <li>Заміна ременів та ланцюга приводу ГРМ</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/clutch"
+                  >
+                    <li>Система зчеплення</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/injection"
+                  >
+                    <li>Чистка форсунок (інжектора)</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/ignition"
+                  >
+                    <li>Система запалювання</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/radiator"
+                  >
+                    <li>Промивка радіатора пічки</li>
                   </Link>
                 </ul>
               </>

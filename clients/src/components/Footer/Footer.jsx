@@ -27,9 +27,6 @@ const Footer = () => {
               <Link to="/autodiagnostic">
                 <li>Автодіагностика</li>
               </Link>
-              <Link to="/tehservice">
-                <li>Технічне обслуговування</li>
-              </Link>
               <Link to="/hodovaya">
                 <li>Ремонт ходової</li>
               </Link>
@@ -45,6 +42,33 @@ const Footer = () => {
               <Link to="/rozval">
                 <li>Розвал-сходження 3D</li>
               </Link>
+              <Link to="/tehfluids">
+                <li>Заміна технічних рідин та фільтрів</li>
+              </Link>
+              <Link to="/braksystem">
+                <li>Гальмівна система</li>
+              </Link>
+              <Link to="/steering">
+                <li>Рульове управління</li>
+              </Link>
+              <Link to="/cooling_system">
+                <li>Система охолодження</li>
+              </Link>
+              <Link to="/replacement_belts">
+                <li>Заміна ременів та ланцюга приводу ГРМ</li>
+              </Link>
+              <Link to="/clutch">
+                <li>Система зчеплення</li>
+              </Link>
+              <Link to="/injection">
+                <li>Діагностика інжектора</li>
+              </Link>
+              <Link to="/ignition">
+                <li>Система запалювання</li>
+              </Link>
+              <Link to="/radiator">
+                <li>Промивка радіатора пічки</li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -57,7 +81,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h1 className={styles.links__title}>ГОДИНИ ПРАЦІ</h1>
+              <h1 className={styles.links__title}>ГРАФІК РОБОТИ</h1>
               <ul className={styles.menu__block}>
                 <p>
                   пн.-сб. 09:00-18:00
