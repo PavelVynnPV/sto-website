@@ -429,6 +429,9 @@
   gap: 10px;
   color: red;
 }
+.service__li_item span {
+  margin-right: 5px;
+}
 .service_table li:hover {
   background-color: #54b0df;
 }

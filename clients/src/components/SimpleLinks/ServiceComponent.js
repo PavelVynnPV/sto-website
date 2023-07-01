@@ -16,7 +16,7 @@ const ServiceComponent = ({ service }) => {
 
           return (
             <>
-              <li>
+              <li className={styles.service__li_item}>
                 <span>{service_item.name}</span>
                 <span>{service_item.price}</span>
               </li>
