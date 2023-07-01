@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sto-website/static/css/main.43b5bcbb.css",
-    "main.js": "/sto-website/static/js/main.7d2ebe41.js",
+    "main.css": "/sto-website/static/css/main.3a9be1ab.css",
+    "main.js": "/sto-website/static/js/main.037d5291.js",
     "static/media/autodiagnostic.jpeg": "/sto-website/static/media/autodiagnostic.d50606fdef50052608fa.jpeg",
     "static/media/cooling_imgs.jpg": "/sto-website/static/media/cooling_imgs.28182dc5626f88c9489d.jpg",
     "static/media/fluids_imgs.jpg": "/sto-website/static/media/fluids_imgs.48c86d62f894b09c5779.jpg",
@@ -11,6 +11,7 @@
     "static/media/hodova.jpg": "/sto-website/static/media/hodova.dd184fb496f4018cf87d.jpg",
     "static/media/slider_second.jpg": "/sto-website/static/media/slider_second.dd184fb496f4018cf87d.jpg",
     "static/media/engines_imgs.jpg": "/sto-website/static/media/engines_imgs.35aeeb2bf354932b1365.jpg",
+    "static/media/svarka_imgs.jpg": "/sto-website/static/media/svarka_imgs.08a239631096d2712023.jpg",
     "static/media/belt_imgs.jpg": "/sto-website/static/media/belt_imgs.215450192278cea6f6c5.jpg",
     "static/media/break_imgs.jpg": "/sto-website/static/media/break_imgs.c003f319d9a1b3d9e538.jpg",
     "static/media/steering_imgs.jpg": "/sto-website/static/media/steering_imgs.58c73db15de4485c7d69.jpg",
@@ -70,11 +71,11 @@
     "static/media/next_arrow_slider.svg": "/sto-website/static/media/next_arrow_slider.0670c75e9fc45680440d.svg",
     "static/media/prev_arrow_slider.svg": "/sto-website/static/media/prev_arrow_slider.e5c5bcc0af55dac6f8ac.svg",
     "static/media/mark.svg": "/sto-website/static/media/mark.f275e6d690f0e0952acf.svg",
-    "main.43b5bcbb.css.map": "/sto-website/static/css/main.43b5bcbb.css.map",
-    "main.7d2ebe41.js.map": "/sto-website/static/js/main.7d2ebe41.js.map"
+    "main.3a9be1ab.css.map": "/sto-website/static/css/main.3a9be1ab.css.map",
+    "main.037d5291.js.map": "/sto-website/static/js/main.037d5291.js.map"
   },
   "entrypoints": [
-    "static/css/main.43b5bcbb.css",
-    "static/js/main.7d2ebe41.js"
+    "static/css/main.3a9be1ab.css",
+    "static/js/main.037d5291.js"
   ]
 }
