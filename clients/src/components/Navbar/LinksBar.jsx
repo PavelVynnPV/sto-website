@@ -77,6 +77,8 @@ const LinksBar = ({ href, setWindowLocHref, windowLocHref, setLoc}) => {
         window_location = "Промивка радіатора пічки";
       } else if (paths[0] === "allservices") {
         window_location = "Усі послуги";
+      } else if (paths[0] === "svarka") {
+        window_location = "Зварювальні та слюсарні роботи";
       } else {
         window_location = "";
       }
@@ -250,6 +252,15 @@ const LinksBar = ({ href, setWindowLocHref, windowLocHref, setLoc}) => {
                     to="/radiator"
                   >
                     <li>Промивка радіатора пічки</li>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setOpenMenu(false);
+                      setOpenBurgerMenu(false);
+                    }}
+                    to="/svarka"
+                  >
+                    <li>Зварювальні та слюсарні роботи</li>
                   </Link>
                 </ul>
               </>

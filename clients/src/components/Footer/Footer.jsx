@@ -69,6 +69,9 @@ const Footer = () => {
               <Link to="/radiator">
                 <li>Промивка радіатора пічки</li>
               </Link>
+              <Link to="/svarka">
+                <li>Зварювальні та слюсарні роботи</li>
+              </Link>
             </ul>
           </div>
         </div>

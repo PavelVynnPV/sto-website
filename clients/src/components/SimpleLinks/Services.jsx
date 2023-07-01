@@ -29,9 +29,11 @@ import {
   replacing_interior_txt,
   steering,
   steering_txt,
+  svarka,
+  svarka_txt,
 } from "./helper";
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Services = () => {
   const [windowServiceTitle, setWindowServiceTitle] = useState("");
@@ -111,6 +113,10 @@ const Services = () => {
         window_location_title = "Заміна обігрівача салону (радіатора пічки)";
         window_location_txt = replacing_interior_txt;
         window_location_service = replacing_interior;
+      } else if (paths[0] === "svarka") {
+        window_location_title = "Зварювальні та слюсарні роботи";
+        window_location_txt = svarka_txt;
+        window_location_service = svarka;
       } else {
       }
     };

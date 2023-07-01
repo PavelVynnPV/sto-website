@@ -330,6 +330,7 @@
 .braksystem__banner,
 .tire__banner,
 .engine__banner,
+.svarka__banner,
 .other_services__banner,
 .tehservice__banner {
   height: 375px;
@@ -367,6 +368,7 @@
 .clutch__banner::after,
 .electric__banner::after,
 .ignition__banner::after,
+.svarka__banner::after,
 .injection__banner::after,
 .replacement_belts__banner::after,
 .engine__banner::after,
@@ -462,6 +464,9 @@
 }
 .ignition__banner {
   background-image: url("../img/engines_imgs.jpg");
+}
+.svarka__banner {
+  background-image: url("../img/svarka_imgs.jpg");
 }
 .radiator__banner {
   background-image: url("../img/radiator_imgs.jpg");
