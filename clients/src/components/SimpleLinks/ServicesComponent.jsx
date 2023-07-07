@@ -16,34 +16,57 @@ const ServicesComponent = ({
         {serviceText?.map((info) => (
           <>
             <h2 className={styles.service__title}>{info.title}</h2>
-            <p
+            {/* <p
               className={styles.service__text}
               dangerouslySetInnerHTML={{ __html: info.txt1 }}
-            ></p>
+            ></p> */}
           </>
         ))}
 
-        <ServiceComponent service={service} />
         {path === "autodiagnostic" ? (
           <>
-            <ServiceComponent service={service2} />
-            <ServiceComponent service={service3} />
+            <h3 className={styles.service__title}>Діагностика автомобіля:</h3>
+            <ServiceComponent service={service} />
+            {path === "autodiagnostic" ? (
+              <>
+                <h3 className={styles.service__title}>
+                Комп'ютерна діагностика автомобіля:
+                </h3>
+
+                <ServiceComponent service={service2} />
+                <h3 className={styles.service__title}>
+                Комплексна діагностика автомобіля:
+                </h3>
+
+                <ServiceComponent service={service3} />
+              </>
+            ) : null}
           </>
-        ) : null}
-         {path === "tehfluids" ? (
+        ) : (
           <>
-           {serviceText2?.map((info) => (
-          <>
-            <h2 className={styles.service__title}>{info.title}</h2>
-            <p
-              className={styles.service__text}
-              dangerouslySetInnerHTML={{ __html: info.txt1 }}
-            ></p>
+            <ServiceComponent service={service} />
+            {path === "autodiagnostic" ? (
+              <>
+                <ServiceComponent service={service2} />
+                <ServiceComponent service={service3} />
+              </>
+            ) : null}
+            {path === "tehfluids" ? (
+              <>
+                {serviceText2?.map((info) => (
+                  <>
+                    <h2 className={styles.service__title}>{info.title}</h2>
+                    {/* <p
+                      className={styles.service__text}
+                      dangerouslySetInnerHTML={{ __html: info.txt1 }}
+                    ></p> */}
+                  </>
+                ))}
+                <ServiceComponent service={service2} />
+              </>
+            ) : null}
           </>
-        ))}
-            <ServiceComponent service={service2} />
-          </>
-        ) : null}
+        )}
       </div>
     </>
   );

@@ -204,6 +204,9 @@
 .fix__blocks_container .fix__block:nth-child(16) {
   background-image: url("../img/radiator_imgs.jpg");
 }
+.fix__blocks_container .fix__block:nth-child(17) {
+  background-image: url("../img/svarka_imgs.jpg");
+}
 
 /* //////diagnostic */
 
@@ -385,7 +388,7 @@
 }
 .service__info {
   max-width: 1100px;
-  margin: auto;
+  margin-left: 150px;
   font-size: 1rem;
   margin-top: 3rem;
   padding: 0 20px;
@@ -431,6 +434,9 @@
 }
 .service__li_item span {
   margin-right: 5px;
+}
+.service__li_item span:nth-child(2){
+  font-weight: bold;
 }
 .service_table li:hover {
   background-color: #54b0df;
@@ -669,22 +675,17 @@ table tr:hover {
 /* /////////////ALL SERVICES */
 
 .allServices {
-  max-width: 1100px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   margin: auto;
 }
-.all_services_title {
-  font-size: 40px;
-  text-align: center;
-}
-
-
 
 
 @media (max-width: 1200px) {
   .service__info {
     width: 100% !important;
+    margin-left: 0;
   }
   .service_table li {
     height: 100%;

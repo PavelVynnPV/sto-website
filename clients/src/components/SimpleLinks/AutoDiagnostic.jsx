@@ -34,9 +34,11 @@ const AutoDiagnostic = () => {
             Зверніться до нас для професійної діагностики, щоб забезпечити
             безпеку та ефективність вашого автомобіля.
           </p>
-         <ServiceComponent service={car_diagnostics1}/>
-         <ServiceComponent service={car_diagnostics2}/>
-         <ServiceComponent service={car_diagnostics3}/>
+          <ServiceComponent service={car_diagnostics1} />
+
+          <ServiceComponent service={car_diagnostics2} />
+
+          <ServiceComponent service={car_diagnostics3} />
 
           <h2 className={styles.service__title}>Діагностика турбонаддуву</h2>
           <p className={styles.service__text}>
@@ -55,7 +57,7 @@ const AutoDiagnostic = () => {
             Звертайтеся до нас для професійної діагностики турбонаддуву і
             забезпечуйте надійну та ефективну роботу вашого автомобіля.
           </p>
-          <ServiceComponent service={diagnostics_turbocharging}/>
+          <ServiceComponent service={diagnostics_turbocharging} />
 
           <p className={styles.service__text}></p>
         </div>

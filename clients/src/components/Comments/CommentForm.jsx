@@ -140,7 +140,7 @@ const CommentForm = () => {
           {!isValid ? <p className={email.length > 1 ? styles.red_error : styles.unActive}>Email введений невірно*</p> : null}
         </div>
         <div className={styles.form__inputs}>
-          <label>Номер заказ-наряда:</label>
+          <label>Номер замовлення:</label>
           <input
             type="text"
             value={orderNumber}

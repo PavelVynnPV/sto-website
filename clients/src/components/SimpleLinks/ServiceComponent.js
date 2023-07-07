@@ -10,17 +10,17 @@ const ServiceComponent = ({ service }) => {
           <span>Ціни</span>
         </li> */}
         {service?.map((service_item) => {
-          let newText =
-            service_item.warning.charAt(0).toUpperCase() +
-            service_item.warning.slice(1);
+          // let newText =
+          //   service_item.warning.charAt(0).toUpperCase() +
+          //   service_item.warning.slice(1);
 
           return (
             <>
               <li className={styles.service__li_item}>
-                <span>{service_item.name}</span>
+                <span>{service_item.name}{" "}{service_item.price.length === 0 ? null : "-"}</span>
                 <span>{service_item.price}</span>
               </li>
-              <li
+              {/* <li
                 className={
                   service_item.warning.length !== 0
                     ? styles.under_services__text
@@ -32,7 +32,7 @@ const ServiceComponent = ({ service }) => {
                   <p>{newText}</p>
                   <i class="fa-solid fa-arrow-up"></i>
                 </div>
-              </li>
+              </li> */}
             </>
           );
         })}

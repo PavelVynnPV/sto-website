@@ -33,7 +33,6 @@ const AppRoutes = ({ href }) => {
         />
         <Routes>
           <Route exact path="/sto-website" element={<Main />} />
-          <Route exact path="/allservices" element={<AllServices />} />
           <Route exact path="/contacts" element={<Contacts />} />
           {/* <Route exact path="/hodovaya" element={<HodovayaFix />} /> */}
           {/* <Route exact path="/autodiagnostic" element={<AutoDiagnostic />} /> */}
