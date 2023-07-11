@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sto-website/static/css/main.7fa7a0b3.css",
-    "main.js": "/sto-website/static/js/main.4a036476.js",
+    "main.css": "/sto-website/static/css/main.1f32d5e9.css",
+    "main.js": "/sto-website/static/js/main.ca1fec16.js",
     "static/media/autodiagnostic.jpeg": "/sto-website/static/media/autodiagnostic.d50606fdef50052608fa.jpeg",
     "static/media/cooling_imgs.jpg": "/sto-website/static/media/cooling_imgs.28182dc5626f88c9489d.jpg",
     "static/media/fluids_imgs.jpg": "/sto-website/static/media/fluids_imgs.48c86d62f894b09c5779.jpg",
@@ -71,11 +71,11 @@
     "static/media/next_arrow_slider.svg": "/sto-website/static/media/next_arrow_slider.0670c75e9fc45680440d.svg",
     "static/media/prev_arrow_slider.svg": "/sto-website/static/media/prev_arrow_slider.e5c5bcc0af55dac6f8ac.svg",
     "static/media/mark.svg": "/sto-website/static/media/mark.f275e6d690f0e0952acf.svg",
-    "main.7fa7a0b3.css.map": "/sto-website/static/css/main.7fa7a0b3.css.map",
-    "main.4a036476.js.map": "/sto-website/static/js/main.4a036476.js.map"
+    "main.1f32d5e9.css.map": "/sto-website/static/css/main.1f32d5e9.css.map",
+    "main.ca1fec16.js.map": "/sto-website/static/js/main.ca1fec16.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fa7a0b3.css",
-    "static/js/main.4a036476.js"
+    "static/css/main.1f32d5e9.css",
+    "static/js/main.ca1fec16.js"
   ]
 }

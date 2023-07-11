@@ -299,10 +299,6 @@
 .active {
   display: flex;
 }
-#autoDiagnostic_block .service_table li:nth-child(2) {
-  background-color: #241d1d41 !important;
-  font-weight: bold;
-}
 .service__block {
   width: 100%;
   padding-bottom: 3rem;
@@ -393,15 +389,49 @@
   margin-top: 3rem;
   padding: 0 20px;
 }
-.service_table {
+.service_table li{
   list-style: none !important;
   padding: 0 !important;
   width: 100%;
   border-top: 1px solid #000;
   border-left: 1px solid #000;
+  color: red !important;
   border-right: 1px solid #000;
   gap: 0 !important;
   margin-bottom: 70px !important;
+}
+.services_table_autodiagnostic{
+  list-style: none !important;
+}
+.services_table_autodiagnostic li {
+  position: relative;
+}
+.services_table_autodiagnostic li:nth-child(1) {
+  font-size: 18px;
+  font-weight: 500;
+}
+.services_table_autodiagnostic li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #000;
+  left: -14px;
+  bottom: 7px;
+}
+.services_table_autodiagnostic li:nth-child(+n+2)::before {
+  content: " ";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  transform: rotate(135deg);
+  background-color: #000;
+  left: 24px;
+  bottom: 7px;
+}
+.services_table_autodiagnostic li:nth-child(+n+2) {
+  padding-left: 40px;
 }
 .service_table__first {
   background-color: #241d1d !important;

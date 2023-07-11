@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Main.module.css";
-import { conditioner, car_conditioner } from "./helper";
+import { car_conditioner } from "./helper";
 import ServiceComponent from "./ServiceComponent";
 
 const AutoConditioner = () => {
@@ -16,7 +16,7 @@ const AutoConditioner = () => {
           <h2 className={styles.service__title}>
             Обслуговування автокондиціонера
           </h2>
-          <p className={styles.service__text}>
+          {/* <p className={styles.service__text}>
             Наша компанія пропонує послугу обслуговування автокондиціонера, яка
             допоможе вам забезпечити комфортне та приємне відчуття під час
             поїздок. Наші професіонали займаються повним обслуговуванням системи
@@ -29,9 +29,9 @@ const AutoConditioner = () => {
             Звертайтеся до нас для забезпечення оптимальної працездатності вашої
             системи кондиціонування і насолоджуйтеся комфортом у вашому
             автомобілі навіть у спекотні дні.
-          </p>
+          </p> */}
           <ServiceComponent service={car_conditioner} />
-          <p className={styles.service__text}>
+          {/* <p className={styles.service__text}>
             У вашого авто кондиціонера є одне завдання: зробити ваше перебування
             в автомобілі комфортним у спеку. Ваш компресор кондиціонера також
             відповідає за видалення вологи із салону вашого автомобіля, та
@@ -48,9 +48,9 @@ const AutoConditioner = () => {
             через ці проблеми часто відбувається витік холодоагенту, що
             унеможливлює ефективне охолодження салону. Ця рідина кондиціонера
             також становить небезпеку для навколишнього середовища.
-          </p>
+          </p> */}
 
-          <h2 className={styles.service__title}>
+          {/* <h2 className={styles.service__title}>
             ТО автомобільних кондиціонерів у Києві
           </h2>
           <p className={styles.service__text}>
@@ -83,8 +83,7 @@ const AutoConditioner = () => {
             <strong>Ми гарантуємо,</strong> що у вашому авто буде приємна
             прохолода і не буде запотівання. Уникайте дорогого ремонту
             кондиціонування, регулярно проходячи перевірку на нашому СТО.
-          </p>
-          <ServiceComponent service={conditioner} />
+          </p> */}
         </div>
       </div>
     </section>

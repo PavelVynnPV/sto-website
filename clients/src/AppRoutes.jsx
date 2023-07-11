@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LinksBar, Navbar } from "./components/Navbar";
-import { AllServices, Main } from "./components/Main";
+import { Main } from "./components/Main";
 import {
   Contacts,
   TehService,
@@ -11,7 +11,6 @@ import {
 } from "./components/SimpleLinks";
 import { Footer } from "./components/Footer";
 import { CommentForm } from "./components/Comments";
-import ScrollToTop from "./components/ScrollToTop";
 import React, { useState } from "react";
 import Services from "./components/SimpleLinks/Services";
 
@@ -23,7 +22,8 @@ const AppRoutes = ({ href }) => {
   return (
     <>
       <BrowserRouter>
-        <ScrollToTop />
+      {/* <ScrollToTop/> */}
+        
         <Navbar />
         <LinksBar
           href={href}
@@ -34,18 +34,12 @@ const AppRoutes = ({ href }) => {
         <Routes>
           <Route exact path="/sto-website" element={<Main />} />
           <Route exact path="/contacts" element={<Contacts />} />
-          {/* <Route exact path="/hodovaya" element={<HodovayaFix />} /> */}
-          {/* <Route exact path="/autodiagnostic" element={<AutoDiagnostic />} /> */}
           <Route exact path="/tehservice" element={<TehService />} />
           <Route exact path="/otherservices" element={<OtherServices />} />
           <Route exact path="/comments" element={<CommentForm />} />
           <Route exact path="/autoconditioner" element={<AutoConditioner />} />
           <Route exact path="/tirefitting" element={<TireFitting />} />
           <Route exact path="/rozval" element={<Rozval />} />
-          {/* <Route exact path="/engine" element={<Engine />} /> */}
-          {/* <Route exact path="/tehfluids" element={<TehFluids />} /> */}
-          {/* <Route exact path="/braksystem" element={<BrakSystem />} /> */}
-          {/* <Route exact path="/steering" element={<Steering />} /> */}
           <Route
             exact
             path={`/${paths}`}

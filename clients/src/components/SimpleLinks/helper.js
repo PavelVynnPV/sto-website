@@ -1057,12 +1057,6 @@ export const replacement_filters = [
   },
   {
     serv_title: "",
-    name: "Заміна фільтрів ГБО        ",
-    price: "----",
-    warning: "",
-  },
-  {
-    serv_title: "",
     name: "Заміна фільтра в АКПП        ",
     price: "від 1100грн.        ",
     warning: "Фільтри, які стоять в коробці, треба розбирати*        ",
@@ -1289,13 +1283,13 @@ export const car_diagnostics3 = [
   },
   {
     serv_title: "",
-    name: "Основна діагностика (50 пунктів)        ",
+    name: "Основна діагностика        ",
     price: "",
     warning: "",
   },
   {
     serv_title: "",
-    name: "Комп'ютерна діагностика (4 пункти)        ",
+    name: "Комп'ютерна діагностика         ",
     price: "",
     warning: "",
   },
@@ -1347,6 +1341,24 @@ export const car_conditioner = [
     serv_title: "",
     name: "Чищення системи кондиціонування авто        ",
     price: "від 4950грн.        ",
+    warning: "",
+  },
+  {
+    serv_title: "",
+    name: "Заправка та обслуговування автокодиціонера",
+    price: "350грн.    ",
+    warning: "",
+  },
+  {
+    serv_title: "",
+    name: "Фреон 100 грам",
+    price: "90грн.    ",
+    warning: "",
+  },
+  {
+    serv_title: "",
+    name: "Антибактеріальне чищення системи кондиціювання салону + заміна фільтра салону    ",
+    price: "від 350грн.    ",
     warning: "",
   },
 ];
@@ -1561,26 +1573,6 @@ export const auto_light = [
 ];
 
 ////Auto Conditioner
-export const conditioner = [
-  {
-    serv_title: "",
-    name: "Заправка та обслуговування автокодиціонера",
-    price: "350грн.    ",
-    warning: "",
-  },
-  {
-    serv_title: "",
-    name: "Фреон 100 грам",
-    price: "90грн.    ",
-    warning: "",
-  },
-  {
-    serv_title: "",
-    name: "Антибактеріальне чищення системи кондиціювання салону + заміна фільтра салону    ",
-    price: "від 350грн.    ",
-    warning: "",
-  },
-];
 
 ///ROZVAL
 export const rozval = [
@@ -1793,7 +1785,7 @@ export const svarka = [
   {
     serv_title: "",
     name: "Загальні слюсарні роботи",
-    price: " 1 час 400 грн.",
+    price: " 1 год. 400 грн.",
     warning: "",
   },
   {

@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "../styles/Main.module.css";
-import { Link } from "react-router-dom";
 import { SwiperBottomSlider, SwiperSlider } from "../SwiperSlider";
 import AllServices from "./AllServices";
+import ScrollToTopOnMount from "../ScrollToTopOnMount";
 
-const Main = () => {
+const Main = ({ setIsActiveService }) => {
   return (
     <>
+      <ScrollToTopOnMount />
       <SwiperSlider />
       <section className={styles.advances}>
         <div className={styles.advances__container}>
@@ -43,7 +44,7 @@ const Main = () => {
                 <h1 className={styles.advances_block__title}>
                   Гарантія на послуги
                 </h1>
-                <p className={styles.advances_block__text}>
+                <p className={styles.advances_block__text} href="#brb">
                   Ми надаєм повну гарантію на послуги, які були надані нашим СТО
                 </p>
               </div>
@@ -73,11 +74,11 @@ const Main = () => {
           авто в Києві. Фахівці з багаторічним досвідом виконують найскладніші
           завдання.
         </p>
-        <AllServices />
+        <AllServices setIsActiveService={setIsActiveService} />
       </section>
       <section className={styles.diagnostic}>
         <div className={styles.diagnostic__container}>
-          <h1 className={styles.advances__title}>
+          <h1 className={styles.advances__title} id="brb">
             Діагностика і ремонт автомобіля в Києві
           </h1>
           <p className={styles.diagnostic__text}>

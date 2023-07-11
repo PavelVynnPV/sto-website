@@ -1,3 +1,4 @@
+import ScrollToTop from "../ScrollToTop";
 import styles from "../styles/Main.module.css";
 import ServicesComponent from "./ServicesComponent";
 import {

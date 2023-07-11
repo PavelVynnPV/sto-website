@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "../styles/Main.module.css";
 
-const ServiceComponent = ({ service }) => {
+const ServiceComponent = ({ service, path }) => {
   return (
     <>
- <ul className={styles.services_table}>
+      <ul
+        className={
+          path === "autodiagnostic"
+            ? styles.services_table_autodiagnostic
+            : styles.services_table
+        }
+      >
         {/* <li className={styles.services_table__first}>
           <span>Послуги</span>
           <span>Ціни</span>
@@ -17,7 +23,10 @@ const ServiceComponent = ({ service }) => {
           return (
             <>
               <li className={styles.service__li_item}>
-                <span>{service_item.name}{" "}{service_item.price.length === 0 ? null : "-"}</span>
+                <span>
+                  {service_item.name}{" "}
+                  {service_item.price.length === 0 ? null : "-"}
+                </span>
                 <span>{service_item.price}</span>
               </li>
               {/* <li
@@ -37,13 +46,6 @@ const ServiceComponent = ({ service }) => {
           );
         })}
       </ul>
-
-
-
-
-
-
-
 
       {/* <ul className={styles.service_table}>
         <li className={styles.service_table__first}>
@@ -78,8 +80,6 @@ const ServiceComponent = ({ service }) => {
           );
         })}
       </ul> */}
-
-
     </>
   );
 };

@@ -4,7 +4,6 @@ import {
   car_diagnostics1,
   car_diagnostics2,
   car_diagnostics3,
-  diagnostics_injection,
   diagnostics_turbocharging,
 } from "./helper";
 import ServiceComponent from "./ServiceComponent";
@@ -21,7 +20,7 @@ const AutoDiagnostic = () => {
         <div className={styles.service__info}>
           <h2 className={styles.service__title}>Діагностика автомобіля</h2>
 
-          <p className={styles.service__text}>
+          {/* <p className={styles.service__text}>
             Наша компанія надає послугу діагностики автомобіля, щоб забезпечити
             надійність та оптимальну роботу вашого транспортного засобу. Наші
             кваліфіковані механіки та високотехнологічне обладнання допоможуть
@@ -33,7 +32,7 @@ const AutoDiagnostic = () => {
             <br />
             Зверніться до нас для професійної діагностики, щоб забезпечити
             безпеку та ефективність вашого автомобіля.
-          </p>
+          </p> */}
           <ServiceComponent service={car_diagnostics1} />
 
           <ServiceComponent service={car_diagnostics2} />
@@ -41,7 +40,7 @@ const AutoDiagnostic = () => {
           <ServiceComponent service={car_diagnostics3} />
 
           <h2 className={styles.service__title}>Діагностика турбонаддуву</h2>
-          <p className={styles.service__text}>
+          {/* <p className={styles.service__text}>
             Наша компанія надає послугу діагностики турбонаддуву, щоб
             забезпечити правильну роботу та оптимальну продуктивність турбінного
             системи вашого автомобіля. Наші кваліфіковані спеціалісти здійснюють
@@ -56,7 +55,7 @@ const AutoDiagnostic = () => {
             <br />
             Звертайтеся до нас для професійної діагностики турбонаддуву і
             забезпечуйте надійну та ефективну роботу вашого автомобіля.
-          </p>
+          </p> */}
           <ServiceComponent service={diagnostics_turbocharging} />
 
           <p className={styles.service__text}></p>
